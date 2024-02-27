@@ -7,6 +7,7 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires eu.hansolo.tilesfx;
+    requires com.jfoenix;
 
     opens lk.ijse.bookworm_thelibrarymanagementsystem to javafx.fxml;
     exports lk.ijse.bookworm_thelibrarymanagementsystem;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
@@ -7,60 +8,136 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1075.0" maxWidth="1915.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1075.0" maxWidth="1915.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.LoginFormController">
    <children>
       <Pane layoutX="1211.0" layoutY="96.0" opacity="0.81" prefHeight="872.0" prefWidth="546.0" style="-fx-background-color: black; -fx-background-radius: 30;">
          <children>
-            <TextField layoutX="94.0" layoutY="248.0" prefHeight="44.0" prefWidth="339.0" promptText="Name Here" style="-fx-background-color: transperant;">
+            <Label layoutX="92.0" layoutY="48.0" text="Welcome Back" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font name="Ebrima" size="12.0" />
+                  <Font name="Ebrima Bold" size="49.0" />
                </font>
-            </TextField>
+            </Label>
+            <Label layoutX="196.0" layoutY="107.0" text="BookWorm ILMS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="18.0" />
+               </font>
+            </Label>
          </children></Pane>
-      <Line endX="1179.0" layoutX="479.0" layoutY="221.0" opacity="0.59" startX="819.0" stroke="WHITE" />
+      <Line endX="1179.0" layoutX="479.0" layoutY="238.0" opacity="0.59" startX="819.0" stroke="WHITE" />
       <ImageView fitHeight="1056.0" fitWidth="1162.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Logo/wite%20library%20logo.png" />
+            <Image url="@../../../View/Logo/wite%20library%20logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="1425.0" layoutY="148.0" text="LOG IN" textFill="WHITE">
+      <Label layoutX="1425.0" layoutY="265.0" text="LOG IN" textFill="WHITE">
          <font>
             <Font name="Ebrima Bold" size="34.0" />
          </font>
       </Label>
-      <Label layoutX="1317.0" layoutY="321.0" text="NAME" textFill="WHITE">
+      <Label layoutX="1317.0" layoutY="362.0" text="NAME" textFill="WHITE">
          <font>
             <Font name="Ebrima Bold" size="14.0" />
          </font></Label>
-      <Line endX="198.0" layoutX="1453.0" layoutY="839.0" opacity="0.9" startX="-155.0" stroke="WHITE" />
+      <Line endX="242.6666259765625" layoutX="1453.0" layoutY="826.0" opacity="0.9" startX="-194.6666259765625" stroke="WHITE" />
       <Label layoutX="1768.0" layoutY="1026.0" text="BookWorm ILMS V 01.01" />
-      <Label layoutX="1312.0" layoutY="433.0" text="PASSWORD" textFill="WHITE">
+      <Label layoutX="1312.0" layoutY="474.0" text="PASSWORD" textFill="WHITE">
          <font>
             <Font name="Ebrima Bold" size="14.0" />
          </font></Label>
-      <Label layoutX="1315.0" layoutY="544.0" text="EMAIL" textFill="WHITE">
-         <font>
-            <Font name="Ebrima Bold" size="14.0" />
-         </font></Label>
-      <Pane layoutX="1305.0" layoutY="345.0" opacity="0.3" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 17;">
+      <Pane layoutX="1307.0" layoutY="390.0" opacity="0.3" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 17;">
          <effect>
             <DropShadow height="35.66" radius="17.33" spread="0.23" width="35.66" />
          </effect>
       </Pane>
-      <Pane layoutX="1306.0" layoutY="457.0" opacity="0.3" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 17;">
+      <Pane layoutX="1306.0" layoutY="499.0" opacity="0.3" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 17;">
          <effect>
             <DropShadow height="36.0" radius="17.5" spread="0.34" width="36.0" />
          </effect>
       </Pane>
-      <TextField layoutX="1315.0" layoutY="457.0" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
-      <Pane layoutX="1305.0" layoutY="569.0" opacity="0.3" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 17;">
+      <TextField layoutX="1315.0" layoutY="499.0" onAction="#password_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1601.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../View/Social%20Media/icons8-instagram-100.png" />
+         </image>
          <effect>
-            <DropShadow height="36.0" radius="17.5" spread="0.29" width="36.0" />
+            <DropShadow>
+               <color>
+                  <Color opacity="0.8511450290679932" />
+               </color>
+            </DropShadow>
          </effect>
-      </Pane>
-      <TextField layoutX="1309.0" layoutY="569.0" prefHeight="44.0" prefWidth="339.0" promptText="Email Here" style="-fx-background-color: transperant;" />
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1530.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../View/Social%20Media/icons8-twitterx-100.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.8511450290679932" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1453.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../View/Social%20Media/icons8-facebook-100.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.8511450290679932" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1373.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../View/Social%20Media/icons8-linkedin-100.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.8511450290679932" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1291.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../View/Social%20Media/icons8-google-100.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.8511450290679932" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="1467.0" layoutY="686.0" text="or" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_signup" buttonType="RAISED" layoutX="1432.0" layoutY="751.0" onAction="#sign_up_on_action" style="-fx-background-color: dodgerblue;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="1369.0" layoutY="597.0" onAction="#login_on_action" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: green;" text="LogIn" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <TextField layoutX="1311.0" layoutY="390.0" onAction="#name_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Name Here" style="-fx-background-color: transperant;">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
