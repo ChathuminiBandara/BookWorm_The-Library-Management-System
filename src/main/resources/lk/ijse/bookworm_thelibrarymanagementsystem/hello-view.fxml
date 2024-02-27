@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
-
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="1075.0" maxWidth="1915.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="1152.0" layoutY="96.0" opacity="0.81" prefHeight="872.0" prefWidth="672.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <Line endX="1286.3333740234375" layoutX="452.0" layoutY="224.0" opacity="0.59" startX="771.1666870117188" stroke="WHITE" />
+      <ImageView fitHeight="1056.0" fitWidth="1162.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Logo/intro%20logo%20gif.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="1403.0" layoutY="148.0" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="1263.0" layoutY="318.0" text="NAME" textFill="WHITE" />
+      <Line endX="279.0" layoutX="1453.0" layoutY="839.0" opacity="0.9" startX="-257.0" stroke="WHITE" />
+      <Label layoutX="1768.0" layoutY="1026.0" text="BookWorm ILMS V 01.01" />
+      <Label layoutX="1260.0" layoutY="432.0" text="PASSWORD" textFill="WHITE" />
+      <Label layoutX="1260.0" layoutY="541.0" text="EMAIL" textFill="WHITE" />
+      <Pane layoutX="1247.0" layoutY="342.0" opacity="0.66" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <TextField layoutX="1257.0" layoutY="344.0" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: transperant;">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font></TextField>
+      <Pane layoutX="1248.0" layoutY="454.0" opacity="0.66" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <TextField layoutX="1257.0" layoutY="454.0" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
+      <Pane layoutX="1247.0" layoutY="566.0" opacity="0.66" prefHeight="44.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <TextField layoutX="1262.0" layoutY="565.0" prefHeight="44.0" prefWidth="339.0" promptText="Email Here" style="-fx-background-color: transperant;" />
+   </children>
+</AnchorPane>
