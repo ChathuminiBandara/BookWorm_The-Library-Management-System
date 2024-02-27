@@ -30,7 +30,7 @@
       <Line endX="1179.0" layoutX="479.0" layoutY="238.0" opacity="0.59" startX="819.0" stroke="WHITE" />
       <ImageView fitHeight="1056.0" fitWidth="1162.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Logo/wite%20library%20logo.png" />
+            <Image url="@../../../View/Logo/intro logo gif.gif" />
          </image>
       </ImageView>
       <Label layoutX="1425.0" layoutY="265.0" text="LOG IN" textFill="WHITE">
@@ -58,10 +58,10 @@
             <DropShadow height="36.0" radius="17.5" spread="0.34" width="36.0" />
          </effect>
       </Pane>
-      <TextField layoutX="1315.0" layoutY="499.0" onAction="#password_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
+      <TextField fx:id="password_Text" layoutX="1315.0" layoutY="499.0" onAction="#password_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1601.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social%20Media/icons8-instagram-100.png" />
+            <Image url="@../../../View/Social Media/icons8-instagram-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -73,7 +73,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1530.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social%20Media/icons8-twitterx-100.png" />
+            <Image url="@../../../View/Social Media/icons8-twitterx-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -85,7 +85,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1453.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social%20Media/icons8-facebook-100.png" />
+            <Image url="@../../../View/Social Media/icons8-facebook-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -97,7 +97,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1373.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social%20Media/icons8-linkedin-100.png" />
+            <Image url="@../../../View/Social Media/icons8-linkedin-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -109,7 +109,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1291.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social%20Media/icons8-google-100.png" />
+            <Image url="@../../../View/Social Media/icons8-google-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -134,7 +134,7 @@
             <Font name="Ebrima Bold" size="20.0" />
          </font>
       </JFXButton>
-      <TextField layoutX="1311.0" layoutY="390.0" onAction="#name_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Name Here" style="-fx-background-color: transperant;">
+      <TextField fx:id="name_Text" layoutX="1311.0" layoutY="390.0" onAction="#name_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Name Here" style="-fx-background-color: transperant;">
          <font>
             <Font name="Ebrima" size="12.0" />
          </font>
