@@ -10,4 +10,6 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
 
     opens lk.ijse.bookworm_thelibrarymanagementsystem to javafx.fxml;
     exports lk.ijse.bookworm_thelibrarymanagementsystem;
+    exports lk.ijse.bookworm_thelibrarymanagementsystem.controller;
+    opens lk.ijse.bookworm_thelibrarymanagementsystem.controller to javafx.fxml;
 }

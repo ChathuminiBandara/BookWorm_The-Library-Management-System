@@ -1,4 +1,4 @@
-package lk.ijse.bookworm_thelibrarymanagementsystem;
+package lk.ijse.bookworm_thelibrarymanagementsystem.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
