@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1055.0" prefWidth="1930.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Admin_Controller">
+   <children>
+      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="1055.0" prefWidth="350.0" style="-fx-background-color: pink;">
+         <children>
+            <VBox layoutX="1.0" layoutY="653.0" prefHeight="401.0" prefWidth="350.0" style="-fx-background-color: purple;" />
+         </children>
+      </Pane>
+      <Pane layoutX="1521.0" prefHeight="1055.0" prefWidth="409.0" style="-fx-background-color: pink;">
+         <children>
+            <VBox layoutX="1.0" layoutY="765.0" prefHeight="290.0" prefWidth="409.0" style="-fx-background-color: purple;" />
+         </children>
+      </Pane>
+      <TableView layoutX="371.0" layoutY="697.0" prefHeight="343.0" prefWidth="1131.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="ID" />
+          <TableColumn prefWidth="200.0" text="Title" />
+            <TableColumn prefWidth="200.0" text="Member " />
+            <TableColumn prefWidth="200.0" text="Author" />
+            <TableColumn prefWidth="200.0" text="Over Due" />
+            <TableColumn prefWidth="200.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="376.0" layoutY="635.0" prefHeight="53.0" prefWidth="441.0" text="Over Due Book Loans">
+         <font>
+            <Font name="Ebrima Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
