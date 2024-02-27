@@ -3,7 +3,7 @@ package lk.ijse.bookworm_thelibrarymanagementsystem;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class LoginFormController {
     @FXML
     private Label welcomeText;
 
