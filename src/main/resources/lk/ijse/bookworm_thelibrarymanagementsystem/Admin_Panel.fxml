@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -10,215 +11,316 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Admin_Controller">
    <children>
-      <Pane layoutX="357.0" layoutY="17.0" prefHeight="51.0" prefWidth="322.0" style="-fx-background-color: depppink;" />
-      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="1055.0" prefWidth="350.0" style="-fx-background-color: white;">
+      <Pane layoutX="352.0" prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: green;">
          <children>
-            <VBox layoutY="655.0" prefHeight="401.0" prefWidth="350.0" style="-fx-background-color: purple;">
+            <Pane layoutX="1218.0" prefHeight="1055.0" prefWidth="361.0" style="-fx-background-color: pink;">
                <children>
-                  <Label prefHeight="72.0" prefWidth="293.0" text="Help">
+                  <VBox layoutX="1.0" layoutY="654.0" prefHeight="401.0" prefWidth="361.0" style="-fx-background-color: purple;" />
+               </children>
+            </Pane>
+            <TableView layoutX="24.0" layoutY="693.0" prefHeight="343.0" prefWidth="1131.0">
+              <columns>
+                <TableColumn prefWidth="150.0" text="ID" />
+                <TableColumn prefWidth="200.0" text="Title" />
+                  <TableColumn prefWidth="200.0" text="Member " />
+                  <TableColumn prefWidth="200.0" text="Author" />
+                  <TableColumn prefWidth="200.0" text="Over Due" />
+                  <TableColumn prefWidth="200.0" text="Return Date" />
+              </columns>
+            </TableView>
+            <Pane layoutX="132.0" layoutY="104.0" prefHeight="145.0" prefWidth="930.0" style="-fx-background-color: d9d9d9;">
+               <children>
+                  <Label layoutX="109.0" layoutY="30.0" text="Borrowed" textFill="#797777">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="72.0" prefWidth="293.0" text="Settings">
+                  <Label layoutX="331.0" layoutY="28.0" text="OverDue" textFill="#797777">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="17.0" />
                      </font>
                   </Label>
+                  <Label layoutX="560.0" layoutY="32.0" text="Visitors" textFill="#797777">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="767.0" layoutY="31.0" text="New Members" textFill="#797777">
+                     <font>
+                        <Font name="Ebrima Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="97.0" fitWidth="87.0" layoutX="11.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="-1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.09">
+                           <color>
+                              <Color opacity="0.8015267252922058" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="31.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Admin Panel Icons/icons8-book-upload-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="223.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.7595419883728027" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="255.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Admin Panel Icons/icons8-book-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="452.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.8167939186096191" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="484.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Admin Panel Icons/icons8-group-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="659.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.7480915784835815" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="691.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Admin Panel Icons/icons8-add-male-user-group-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="265.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../View/Admin Panel Icons/icons8-exclamation-mark-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="107.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="228" textFill="#070707">
+                     <font>
+                        <Font name="Ebrima Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="331.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="45" textFill="#0a0a0a">
+                     <font>
+                        <Font name="Ebrima Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="559.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="660" textFill="#141414">
+                     <font>
+                        <Font name="Ebrima Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="766.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="36" textFill="#0a0a0a">
+                     <font>
+                        <Font name="Ebrima Bold" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="29.0" layoutY="600.0" prefHeight="53.0" prefWidth="441.0" text="Over Due Book Loans" textFill="#110f0f">
+               <font>
+                  <Font name="Ebrima Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="25.0" prefHeight="53.0" prefWidth="441.0" text="Admin DashBoard" textFill="#171212">
+               <font>
+                  <Font name="Ebrima Bold" size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.45038166642189026" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="1055.0" prefWidth="350.0" style="-fx-background-color: black;">
+         <children>
+            <VBox layoutY="757.0" prefHeight="301.0" prefWidth="350.0" style="-fx-background-color: black;">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Help" textFill="#f8f5f5">
+                     <font>
+                        <Font name="Ebrima Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-help-100.png" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.73">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Settings" textFill="#f8f5f5">
+                     <font>
+                        <Font name="Ebrima Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-settings-100.png" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.68">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" graphicTextGap="15.0" prefHeight="110.0" prefWidth="351.0" style="-fx-background-radius: 25;" text="LogOut" textFill="#f8f5f5">
+                     <font>
+                        <Font name="Ebrima Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
                </children></VBox>
             <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="28.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../View/Logo/library logo.png" />
                </image>
             </ImageView>
-            <Label layoutX="94.0" layoutY="40.0" text="BookWorm" textFill="#0d0b0b">
-               <font>
-                  <Font name="Ebrima Bold" size="29.0" />
-               </font>
-            </Label>
-            <VBox layoutX="8.0" layoutY="138.0" prefHeight="334.0" prefWidth="277.0">
+            <VBox layoutX="8.0" layoutY="167.0" prefHeight="334.0" prefWidth="339.0">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label prefHeight="72.0" prefWidth="225.0" text="DashBoard">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="DashBoard" textFill="#f8f5f5">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="25.0" />
                      </font>
-                  </Label>
-                  <Label prefHeight="72.0" prefWidth="224.0" text="Library Loan">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Library Loan" textFill="#f8f5f5">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="25.0" />
                      </font>
-                  </Label>
-                  <Label prefHeight="72.0" prefWidth="293.0" text="Members">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-reload-100.png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Books" textFill="#f8f5f5">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="25.0" />
                      </font>
-                  </Label>
-                  <Label prefHeight="72.0" prefWidth="293.0" text="Branches">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-book-100.png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Members" textFill="#f8f5f5">
                      <font>
-                        <Font name="Courier New" size="28.0" />
+                        <Font name="Ebrima Bold" size="25.0" />
                      </font>
-                  </Label>
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
                </children>
             </VBox>
+            <Line endX="143.23779296875" layoutX="105.0" layoutY="62.0" startX="-12.0">
+               <effect>
+                  <DropShadow offsetY="10.0" spread="0.4">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Line>
          </children>
          <effect>
-            <DropShadow />
+            <DropShadow offsetX="6.0" />
          </effect>
       </Pane>
-      <Pane layoutX="1521.0" prefHeight="1055.0" prefWidth="409.0" style="-fx-background-color: pink;">
-         <children>
-            <VBox layoutX="1.0" layoutY="654.0" prefHeight="401.0" prefWidth="409.0" style="-fx-background-color: purple;" />
-         </children>
-      </Pane>
-      <TableView layoutX="371.0" layoutY="697.0" prefHeight="343.0" prefWidth="1131.0">
-        <columns>
-          <TableColumn prefWidth="150.0" text="ID" />
-          <TableColumn prefWidth="200.0" text="Title" />
-            <TableColumn prefWidth="200.0" text="Member " />
-            <TableColumn prefWidth="200.0" text="Author" />
-            <TableColumn prefWidth="200.0" text="Over Due" />
-            <TableColumn prefWidth="200.0" text="Return Date" />
-        </columns>
-      </TableView>
-      <Label layoutX="376.0" layoutY="635.0" prefHeight="53.0" prefWidth="441.0" text="Over Due Book Loans" textFill="#110f0f">
+      <Label layoutX="92.0" layoutY="38.0" text="BookWorm" textFill="#f5f5f5">
          <font>
-            <Font name="Ebrima Bold" size="35.0" />
+            <Font name="Ebrima Bold" size="29.0" />
          </font>
       </Label>
-      <Label layoutX="365.0" layoutY="17.0" prefHeight="53.0" prefWidth="441.0" text="Admin DashBoard" textFill="#171212">
-         <font>
-            <Font name="Ebrima Bold" size="35.0" />
-         </font>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.45038166642189026" />
-               </color>
-            </DropShadow>
-         </effect>
-      </Label>
-      <Pane layoutX="479.0" layoutY="108.0" prefHeight="145.0" prefWidth="930.0" style="-fx-background-color: d9d9d9;">
-         <children>
-            <Label layoutX="109.0" layoutY="30.0" text="Borrowed" textFill="#797777">
-               <font>
-                  <Font name="Ebrima Bold" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="331.0" layoutY="28.0" text="OverDue" textFill="#797777">
-               <font>
-                  <Font name="Ebrima Bold" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="560.0" layoutY="32.0" text="Visitors" textFill="#797777">
-               <font>
-                  <Font name="Ebrima Bold" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="767.0" layoutY="31.0" text="New Members" textFill="#797777">
-               <font>
-                  <Font name="Ebrima Bold" size="17.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="97.0" fitWidth="87.0" layoutX="11.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="-1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Social%20Media/icons8-circle-100.png" />
-               </image>
-               <effect>
-                  <DropShadow spread="0.09">
-                     <color>
-                        <Color opacity="0.8015267252922058" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="31.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Admin%20Panel%20Icons/icons8-book-upload-100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="223.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Social%20Media/icons8-circle-100.png" />
-               </image>
-               <effect>
-                  <DropShadow>
-                     <color>
-                        <Color opacity="0.7595419883728027" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="255.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Admin%20Panel%20Icons/icons8-book-100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="452.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Social%20Media/icons8-circle-100.png" />
-               </image>
-               <effect>
-                  <DropShadow>
-                     <color>
-                        <Color opacity="0.8167939186096191" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="484.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Admin%20Panel%20Icons/icons8-group-100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="659.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Social%20Media/icons8-circle-100.png" />
-               </image>
-               <effect>
-                  <DropShadow>
-                     <color>
-                        <Color opacity="0.7480915784835815" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="691.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Admin%20Panel%20Icons/icons8-add-male-user-group-100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="265.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../View/Admin%20Panel%20Icons/icons8-exclamation-mark-100.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="107.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="228" textFill="#070707">
-               <font>
-                  <Font name="Ebrima Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label layoutX="331.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="45" textFill="#0a0a0a">
-               <font>
-                  <Font name="Ebrima Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label layoutX="559.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="660" textFill="#141414">
-               <font>
-                  <Font name="Ebrima Bold" size="42.0" />
-               </font>
-            </Label>
-            <Label layoutX="766.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="36" textFill="#0a0a0a">
-               <font>
-                  <Font name="Ebrima Bold" size="42.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
    </children>
 </AnchorPane>
