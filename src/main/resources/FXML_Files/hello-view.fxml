@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1075.0" maxWidth="1915.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.LoginFormController">
+<AnchorPane fx:id="root" maxHeight="1075.0" maxWidth="1915.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.LoginFormController">
    <children>
       <Pane layoutX="1211.0" layoutY="96.0" opacity="0.81" prefHeight="872.0" prefWidth="546.0" style="-fx-background-color: black; -fx-background-radius: 30;">
          <children>
@@ -30,7 +30,7 @@
       <Line endX="1179.0" layoutX="479.0" layoutY="238.0" opacity="0.59" startX="819.0" stroke="WHITE" />
       <ImageView fitHeight="1056.0" fitWidth="1162.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Logo/intro logo gif.gif" />
+            <Image url="@../View/Logo/intro logo gif.gif" />
          </image>
       </ImageView>
       <Label layoutX="1425.0" layoutY="265.0" text="LOG IN" textFill="WHITE">
@@ -61,7 +61,7 @@
       <TextField fx:id="password_Text" layoutX="1315.0" layoutY="499.0" onAction="#password_on_action" prefHeight="44.0" prefWidth="339.0" promptText="Password Here" style="-fx-background-color: transperant;" />
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1601.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social Media/icons8-instagram-100.png" />
+            <Image url="@../View/Social Media/icons8-instagram-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -73,7 +73,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1530.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social Media/icons8-twitterx-100.png" />
+            <Image url="@../View/Social Media/icons8-twitterx-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -85,7 +85,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1453.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social Media/icons8-facebook-100.png" />
+            <Image url="@../View/Social Media/icons8-facebook-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -97,7 +97,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1373.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social Media/icons8-linkedin-100.png" />
+            <Image url="@../View/Social Media/icons8-linkedin-100.png" />
          </image>
          <effect>
             <DropShadow>
@@ -109,7 +109,7 @@
       </ImageView>
       <ImageView fitHeight="51.0" fitWidth="59.0" layoutX="1291.0" layoutY="866.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../View/Social Media/icons8-google-100.png" />
+            <Image url="@../View/Social Media/icons8-google-100.png" />
          </image>
          <effect>
             <DropShadow>
