@@ -16,7 +16,7 @@
 
 <AnchorPane prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Admin_Controller">
    <children>
-      <Pane layoutX="352.0" prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: green;">
+      <Pane fx:id="DynamicPane" layoutX="352.0" prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: green;">
          <children>
             <Pane layoutX="1218.0" prefHeight="1055.0" prefWidth="361.0" style="-fx-background-color: pink;">
                <children>
@@ -58,7 +58,7 @@
                   <ImageView fitHeight="97.0" fitWidth="87.0" layoutX="11.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="-1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                        <Image url="@../View/Social Media/icons8-circle-100.png" />
                      </image>
                      <effect>
                         <DropShadow spread="0.09">
@@ -70,12 +70,12 @@
                   </ImageView>
                   <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="31.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Admin Panel Icons/icons8-book-upload-100.png" />
+                        <Image url="@../View/Admin Panel Icons/icons8-book-upload-100.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="223.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                        <Image url="@../View/Social Media/icons8-circle-100.png" />
                      </image>
                      <effect>
                         <DropShadow>
@@ -87,12 +87,12 @@
                   </ImageView>
                   <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="255.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Admin Panel Icons/icons8-book-100.png" />
+                        <Image url="@../View/Admin Panel Icons/icons8-book-100.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="452.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                        <Image url="@../View/Social Media/icons8-circle-100.png" />
                      </image>
                      <effect>
                         <DropShadow>
@@ -104,12 +104,12 @@
                   </ImageView>
                   <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="484.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Admin Panel Icons/icons8-group-100.png" />
+                        <Image url="@../View/Admin Panel Icons/icons8-group-100.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="659.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Social Media/icons8-circle-100.png" />
+                        <Image url="@../View/Social Media/icons8-circle-100.png" />
                      </image>
                      <effect>
                         <DropShadow>
@@ -121,12 +121,12 @@
                   </ImageView>
                   <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="691.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Admin Panel Icons/icons8-add-male-user-group-100.png" />
+                        <Image url="@../View/Admin Panel Icons/icons8-add-male-user-group-100.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="265.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../View/Admin Panel Icons/icons8-exclamation-mark-100.png" />
+                        <Image url="@../View/Admin Panel Icons/icons8-exclamation-mark-100.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="107.0" layoutY="53.0" prefHeight="38.0" prefWidth="82.0" text="228" textFill="#070707">
@@ -174,14 +174,14 @@
          <children>
             <VBox layoutY="757.0" prefHeight="301.0" prefWidth="350.0" style="-fx-background-color: black;">
                <children>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Help" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Help_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Help" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-help-100.png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-help-100.png" />
                            </image>
                            <effect>
                               <DropShadow spread="0.73">
@@ -193,14 +193,14 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Settings" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Settings_on_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Settings" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-settings-100.png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-settings-100.png" />
                            </image>
                            <effect>
                               <DropShadow spread="0.68">
@@ -220,19 +220,19 @@
                </children></VBox>
             <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="28.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../View/Logo/library logo.png" />
+                  <Image url="@../View/Logo/library logo.png" />
                </image>
             </ImageView>
             <VBox layoutX="8.0" layoutY="167.0" prefHeight="334.0" prefWidth="339.0">
                <children>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="DashBoard" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#DashBoard_On_Action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="DashBoard" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
                            </image>
                            <effect>
                               <DropShadow>
@@ -244,14 +244,14 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Library Loan" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Library_Loan_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Library Loan" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-reload-100.png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-reload-100.png" />
                            </image>
                            <effect>
                               <DropShadow>
@@ -263,14 +263,14 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Books" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Books_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Books" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-book-100.png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-book-100.png" />
                            </image>
                            <effect>
                               <DropShadow>
@@ -282,14 +282,14 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Members" textFill="#f8f5f5">
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Members_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Members" textFill="#f8f5f5">
                      <font>
                         <Font name="Ebrima Bold" size="25.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                              <Image url="@../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
                            </image>
                            <effect>
                               <DropShadow>
