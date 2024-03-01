@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -11,12 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1055.0" prefWidth="1930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Admin_Controller">
+<Pane prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Admin_Controller">
    <children>
-      <Pane fx:id="DynamicPane" layoutX="352.0" prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: green;">
+      <AnchorPane fx:id="Admin_Pane" prefHeight="1055.0" prefWidth="1.0" style="-fx-background-color: green;">
          <children>
             <Pane layoutX="1218.0" prefHeight="1055.0" prefWidth="361.0" style="-fx-background-color: pink;">
                <children>
@@ -169,158 +167,6 @@
                </effect>
             </Label>
          </children>
-      </Pane>
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="1055.0" prefWidth="350.0" style="-fx-background-color: black;">
-         <children>
-            <VBox layoutY="757.0" prefHeight="301.0" prefWidth="350.0" style="-fx-background-color: black;">
-               <children>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Help_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Help" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-help-100.png" />
-                           </image>
-                           <effect>
-                              <DropShadow spread="0.73">
-                                 <color>
-                                    <Color red="1.0" green="1.0" blue="1.0" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Settings_on_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Settings" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-settings-100.png" />
-                           </image>
-                           <effect>
-                              <DropShadow spread="0.68">
-                                 <color>
-                                    <Color red="1.0" green="1.0" blue="1.0" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" graphicTextGap="15.0" prefHeight="110.0" prefWidth="351.0" style="-fx-background-radius: 25;" text="LogOut" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                  </JFXButton>
-               </children></VBox>
-            <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="28.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../View/Logo/library logo.png" />
-               </image>
-            </ImageView>
-            <VBox layoutX="8.0" layoutY="167.0" prefHeight="334.0" prefWidth="339.0">
-               <children>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#DashBoard_On_Action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="DashBoard" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
-                           </image>
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Library_Loan_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Library Loan" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-reload-100.png" />
-                           </image>
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Books_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Books" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-book-100.png" />
-                           </image>
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Members_On_action" prefHeight="73.0" prefWidth="335.0" style="-fx-background-radius: 25;" text="Members" textFill="#f8f5f5">
-                     <font>
-                        <Font name="Ebrima Bold" size="25.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../View/Admin Panel Icons/icons8-dashboard-100 (1).png" />
-                           </image>
-                           <effect>
-                              <DropShadow>
-                                 <color>
-                                    <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
-                                 </color>
-                              </DropShadow>
-                           </effect>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-               </children>
-            </VBox>
-            <Line endX="143.23779296875" layoutX="105.0" layoutY="62.0" startX="-12.0">
-               <effect>
-                  <DropShadow offsetY="10.0" spread="0.4">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </Line>
-         </children>
-         <effect>
-            <DropShadow offsetX="6.0" />
-         </effect>
-      </Pane>
-      <Label layoutX="92.0" layoutY="38.0" text="BookWorm" textFill="#f5f5f5">
-         <font>
-            <Font name="Ebrima Bold" size="29.0" />
-         </font>
-      </Label>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</Pane>
