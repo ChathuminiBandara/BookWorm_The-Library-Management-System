@@ -26,7 +26,7 @@ public class LoginFormController {
         name_Text.clear();
 
         try {
-            AnchorPane pane = load(getClass().getResource("/FXML_Files/Admin_Panel.fxml"));
+            AnchorPane pane = load(getClass().getResource("/FXML_Files/Main_Dashboard.fxml"));
             Scene scene = new Scene(pane);
             Stage stage = (Stage) root.getScene().getWindow();
             stage.setScene(scene);
