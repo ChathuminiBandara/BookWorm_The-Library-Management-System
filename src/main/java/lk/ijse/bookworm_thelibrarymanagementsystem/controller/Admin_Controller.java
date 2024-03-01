@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 
 public class Admin_Controller {
-    public Pane DynamicPane;
+    public AnchorPane DynamicPane;
 
     private void setform(String form) throws IOException {
         URL resource = this.getClass().getResource(form);
@@ -39,21 +39,6 @@ public class Admin_Controller {
         }
     }
 
-    public void Library_Loan_On_action(ActionEvent actionEvent) throws IOException {
-        setform("/FXML_Files/Library_Loans.fxml");
-    }
-
-    public void Books_On_action(ActionEvent actionEvent) {
-    }
-
-    public void Members_On_action(ActionEvent actionEvent) {
-    }
-
-    public void Help_On_action(ActionEvent actionEvent) {
-    }
-
-    public void Settings_on_action(ActionEvent actionEvent) {
-    }
 
 
 }
