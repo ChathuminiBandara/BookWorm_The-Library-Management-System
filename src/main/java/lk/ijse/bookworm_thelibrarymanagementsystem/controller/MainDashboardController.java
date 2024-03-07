@@ -36,7 +36,7 @@ public class MainDashboardController {
     }
 
     public void Help_On_action(ActionEvent actionEvent) {
-        /*setform("/FXML_files/");*/
+
     }
 
     public void Settings_on_action(ActionEvent actionEvent) {
