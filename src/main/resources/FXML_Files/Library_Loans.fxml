@@ -9,6 +9,6 @@
 <Pane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.LibraryController"
-            prefHeight="400.0" prefWidth="600.0">
+            prefHeight="1055.0" prefWidth="1579.0">
 
 </Pane>
