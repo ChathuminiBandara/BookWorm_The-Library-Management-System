@@ -14,8 +14,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.Button?>
 <AnchorPane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.User_form_controller">
    <children>
+      <Button text="Add User" onAction="#addUser" />
+
       <BorderPane prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: white;">
          <top>
             <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
