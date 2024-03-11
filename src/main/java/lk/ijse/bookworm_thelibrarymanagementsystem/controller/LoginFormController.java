@@ -45,6 +45,7 @@ public class LoginFormController {
     }
 
     public void sign_up_on_action(ActionEvent actionEvent) {
+
     }
 
 }
