@@ -1,12 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Library_Branch_Controller"
-            prefHeight="1055.0" prefWidth="1579.0">
 
+<Pane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Library_Branch_Controller">
+   <children>
+      <BorderPane layoutX="2.0" prefHeight="1055.0" prefWidth="1578.0" style="-fx-background-color: FFF1D7FF;">
+         <top>
+            <HBox prefHeight="82.0" prefWidth="1578.0" style="-fx-background-color: FFF1D7FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="82.0" prefWidth="352.0" text="BookWorm Branches">
+                     <font>
+                        <Font name="Ebrima Bold" size="35.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Separator maxHeight="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="50.0">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="9.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Separator>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="973.0" prefWidth="281.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="973.0" prefWidth="317.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="159.0" prefWidth="1578.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Pane prefHeight="235.0" prefWidth="980.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="27.0" layoutY="34.0" prefHeight="314.0" prefWidth="928.0" style="-fx-background-color: #F5761AFF; -fx-background-radius: 30;">
+                     <children>
+                        <Text layoutX="24.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEXT BRANCH FOR THE READING MONTH" wrappingWidth="267.3262023925781">
+                           <font>
+                              <Font name="Ebrima Bold" size="31.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" opacity="0.4699999988079071" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <ScrollPane layoutY="414.0" prefHeight="386.0" prefWidth="975.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                  </ScrollPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
 </Pane>
