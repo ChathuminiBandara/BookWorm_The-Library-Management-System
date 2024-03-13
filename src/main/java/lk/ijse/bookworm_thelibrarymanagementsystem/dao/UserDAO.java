@@ -1,12 +1,4 @@
-package lk.ijse.bookworm_thelibrarymanagementsystem.DAO;
-
-import lk.ijse.bookworm_thelibrarymanagementsystem.entity.User;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-
-import java.util.List;
+package lk.ijse.bookworm_thelibrarymanagementsystem.dao;
 
 public class UserDAO {
   /*  private SessionFactory sessionFactory;

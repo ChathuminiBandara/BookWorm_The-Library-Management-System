@@ -2,8 +2,7 @@ package lk.ijse.bookworm_thelibrarymanagementsystem.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import lk.ijse.bookworm_thelibrarymanagementsystem.DAO.UserDAO;
-import lk.ijse.bookworm_thelibrarymanagementsystem.entity.User;
+import lk.ijse.bookworm_thelibrarymanagementsystem.dao.UserDAO;
 
 public class User_form_controller {
     private final UserDAO userDAO;
