@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="476.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.showbookController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="476.0" prefWidth="725.0" style="-fx-background-color: BLACK;">
+         <children>
+            <ImageView fitHeight="681.0" fitWidth="462.0" layoutY="-59.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../View/Books Images/book2.jpg" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.6450381875038147" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="367.0" fitWidth="249.0" layoutX="83.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../View/Books%20Images/book2.jpg" />
+               </image>
+               <effect>
+                  <DropShadow spread="0.31" />
+               </effect>
+            </ImageView>
+            <Text fill="WHITE" layoutX="446.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE MOON" wrappingWidth="262.13671875">
+               <font>
+                  <Font name="Ebrima Bold" size="47.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
