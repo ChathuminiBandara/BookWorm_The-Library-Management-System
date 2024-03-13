@@ -31,7 +31,7 @@
       </Pane>
       <HBox layoutX="57.0" layoutY="155.0" prefHeight="347.0" prefWidth="1338.0">
          <children>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book1_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView accessibleRole="BUTTON" fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -55,9 +55,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="1.0" mnemonicParsing="false" onAction="#book1_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book2_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -81,9 +82,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="2.0" mnemonicParsing="false" onAction="#book2_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book3_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -107,9 +109,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#book3_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book4_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -133,9 +136,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="-1.0" layoutY="5.0" mnemonicParsing="false" onAction="#book4_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book5_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -159,9 +163,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="-1.0" mnemonicParsing="false" onAction="#book5_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book6_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -185,9 +190,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="-1.0" mnemonicParsing="false" onAction="#book6_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book7_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -211,13 +217,14 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="1.0" mnemonicParsing="false" onAction="#book7_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
          </children>
       </HBox>
       <HBox layoutX="57.0" layoutY="516.0" prefHeight="347.0" prefWidth="1338.0">
          <children>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book8_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -241,9 +248,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="2.0" layoutY="-2.0" mnemonicParsing="false" onAction="#book8_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book9_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -267,9 +275,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="2.0" layoutY="-1.0" mnemonicParsing="false" onAction="#book9_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book10_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -293,9 +302,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#book10_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book11_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -319,9 +329,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="-1.0" mnemonicParsing="false" onAction="#book11_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book12_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -345,9 +356,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#book12_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book13_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -371,9 +383,10 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="-1.0" mnemonicParsing="false" onAction="#book13_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON" onMouseClicked="#book14_show" prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -397,6 +410,7 @@
                         <Font name="Ebrima Bold" size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#book14_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
          </children>
