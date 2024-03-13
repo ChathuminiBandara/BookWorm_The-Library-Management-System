@@ -9,6 +9,7 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
     requires eu.hansolo.tilesfx;
     requires com.jfoenix;
     requires org.hibernate.orm.core;
+    requires java.sql;
 
     opens lk.ijse.bookworm_thelibrarymanagementsystem to javafx.fxml;
     exports lk.ijse.bookworm_thelibrarymanagementsystem;
