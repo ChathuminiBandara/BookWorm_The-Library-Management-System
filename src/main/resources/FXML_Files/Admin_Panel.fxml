@@ -183,7 +183,7 @@
                   </Text>
                   <ImageView fitHeight="162.0" fitWidth="131.0" layoutX="880.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books%20Images/book%20read.png" />
+                        <Image url="@../View/Books Images/book read.png" />
                      </image>
                      <effect>
                         <DropShadow />
