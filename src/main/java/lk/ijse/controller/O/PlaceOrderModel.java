@@ -1,4 +1,4 @@
-package lk.ijse.model;
+package lk.ijse.controller.O;
 
 
 import lk.ijse.db.Dbconnection;
@@ -43,8 +43,5 @@ public class  PlaceOrderModel {
         return true;
     }
 
-    public List<String> loadCustomerIds() {
 
-        return null;
-    }
 }
