@@ -1,4 +1,4 @@
-package lk.ijse.model;
+package lk.ijse.controller.O;
 
 
 import lk.ijse.db.Dbconnection;

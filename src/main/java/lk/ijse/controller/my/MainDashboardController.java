@@ -45,13 +45,8 @@ public class MainDashboardController {
     }
 
     public void Members_On_action(ActionEvent actionEvent) throws IOException {
-       /*setform("/FXML_Files/members.fxml");*/
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboard_form.fxml"));
-        AnchorPane anchorPane = loader.load();
-        Stage newStage = new Stage();
-        newStage.setTitle("1st pane");
-        newStage.setScene(new Scene(anchorPane));
-        newStage.show();
+       setform("/FXML_Files/members.fxml");
+
     }
 
     public void Branches_On_action(ActionEvent actionEvent) throws IOException {

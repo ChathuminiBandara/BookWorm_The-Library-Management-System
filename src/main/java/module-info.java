@@ -11,6 +11,7 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
     requires org.hibernate.orm.core;
     requires java.sql;
     requires jakarta.persistence;
+    requires jasperreports;
 
     opens lk.ijse to javafx.fxml;
     exports lk.ijse;
@@ -18,4 +19,6 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
     opens lk.ijse.controller to javafx.fxml;
     exports lk.ijse.controller.my;
     opens lk.ijse.controller.my to javafx.fxml;
+    exports lk.ijse.controller.O;
+    opens lk.ijse.controller.O to javafx.fxml;
 }
