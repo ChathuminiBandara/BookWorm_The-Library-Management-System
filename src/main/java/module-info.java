@@ -10,9 +10,12 @@ module lk.ijse.bookworm_thelibrarymanagementsystem {
     requires com.jfoenix;
     requires org.hibernate.orm.core;
     requires java.sql;
+    requires jakarta.persistence;
 
-    opens lk.ijse.bookworm_thelibrarymanagementsystem to javafx.fxml;
-    exports lk.ijse.bookworm_thelibrarymanagementsystem;
-    exports lk.ijse.bookworm_thelibrarymanagementsystem.controller;
-    opens lk.ijse.bookworm_thelibrarymanagementsystem.controller to javafx.fxml;
+    opens lk.ijse to javafx.fxml;
+    exports lk.ijse;
+    exports lk.ijse.controller;
+    opens lk.ijse.controller to javafx.fxml;
+    exports lk.ijse.controller.my;
+    opens lk.ijse.controller.my to javafx.fxml;
 }

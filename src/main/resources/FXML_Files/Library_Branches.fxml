@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -14,8 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.Library_Branch_Controller">
+<Pane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.my.Library_Branch_Controller">
    <children>
       <BorderPane layoutX="2.0" prefHeight="1055.0" prefWidth="1578.0" style="-fx-background-color: FFF1D7FF;">
          <top>
@@ -47,7 +45,17 @@
             <VBox prefHeight="973.0" prefWidth="281.0" BorderPane.alignment="CENTER" />
          </left>
          <right>
-            <VBox prefHeight="973.0" prefWidth="317.0" BorderPane.alignment="CENTER" />
+            <VBox prefHeight="710.0" prefWidth="317.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ADD_NEW_BRANCH_ON_ACTION" prefHeight="136.0" prefWidth="321.0" style="-fx-background-color: BLACK;" text="NEW BRANCH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect></VBox>
          </right>
          <bottom>
             <HBox prefHeight="159.0" prefWidth="1578.0" BorderPane.alignment="CENTER" />
@@ -71,11 +79,62 @@
                         </Text>
                      </children>
                   </Pane>
-                  <ScrollPane layoutY="414.0" prefHeight="386.0" prefWidth="975.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                    </content>
-                  </ScrollPane>
+                  <Pane layoutX="29.0" layoutY="381.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ORANGERED; -fx-background-radius: 30;">
+                     <children>
+                        <Button layoutY="1.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: TRANSPERANT;" text="MORATUWA" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="37.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRANCH">
+                           <font>
+                              <Font name="Ebrima Bold" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="276.0" layoutY="380.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ORANGERED; -fx-background-radius: 30;">
+                     <children>
+                        <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: TRANSPERANT; -fx-background-radius: 30;" text="KEGALLE" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima Bold" size="31.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="38.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRANCH">
+                           <font>
+                              <Font name="Ebrima Bold" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="520.0" layoutY="379.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ORANGERED; -fx-background-radius: 30;">
+                     <children>
+                        <Button layoutX="-1.0" layoutY="-7.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: TRANSPERANT;" text="PANADURA" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima Bold" size="28.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="39.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRANCH">
+                           <font>
+                              <Font name="Ebrima Bold" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="764.0" layoutY="377.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ORANGERED; -fx-background-radius: 30;">
+                     <children>
+                        <Button layoutY="-1.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: TRANSPERANT;" text="COLOMBO" textFill="WHITE">
+                           <font>
+                              <Font name="Ebrima Bold" size="30.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="37.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRANCH">
+                           <font>
+                              <Font name="Ebrima Bold" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
                </children>
                <effect>
                   <DropShadow />

@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.control.Button?>
-<AnchorPane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.User_form_controller">
+<AnchorPane prefHeight="1055.0" prefWidth="1579.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.my.User_form_controller">
    <children>
       <Button text="Add User" onAction="#addUser" />
 
@@ -100,32 +100,32 @@
                      <children>
                         <ImageView fitHeight="215.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../View/Books%20Images/book4.jpg" />
+                              <Image url="@../view/Books%20Images/book4.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="225.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../View/Books%20Images/book3.jpg" />
+                              <Image url="@../view/Books%20Images/book3.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="229.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../View/Books%20Images/book8.png" />
+                              <Image url="@../view/Books%20Images/book8.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="201.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../View/Books%20Images/book6.jpg" />
+                              <Image url="@../view/Books%20Images/book6.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../View/Books%20Images/book2.jpg" />
+                              <Image url="@../view/Books%20Images/book2.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="202.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../View/Books%20Images/book7.jpg" />
+                              <Image url="@../view/Books%20Images/book7.jpg" />
                            </image>
                         </ImageView>
                         <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -139,37 +139,37 @@
                         </Label>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../View/Books%20Images/book8.png" />
+                              <Image url="@../view/Books%20Images/book8.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../View/Books%20Images/book2.jpg" />
+                              <Image url="@../view/Books%20Images/book2.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../View/Books%20Images/book13.jpeg" />
+                              <Image url="@../view/Books%20Images/book13.jpeg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../View/Books%20Images/book10.jpeg" />
+                              <Image url="@../view/Books%20Images/book10.jpeg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                            <image>
-                              <Image url="@../View/Books%20Images/book11.jpg" />
+                              <Image url="@../view/Books%20Images/book11.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                            <image>
-                              <Image url="@../View/Books%20Images/book12.jpg" />
+                              <Image url="@../view/Books%20Images/book12.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="188.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../View/Books%20Images/book2.jpg" />
+                              <Image url="@../view/Books%20Images/book2.jpg" />
                            </image>
                         </ImageView>
                      </children>

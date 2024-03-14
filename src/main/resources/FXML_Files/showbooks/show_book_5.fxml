@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="522.0" prefWidth="780.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.showbookController">
+<AnchorPane prefHeight="522.0" prefWidth="780.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.my.showbookController">
     <children>
         <Pane layoutY="-1.0" prefHeight="525.0" prefWidth="780.0" style="-fx-background-color: #F8853E; -fx-background-radius: 30;">
             <children>
@@ -21,7 +21,7 @@
                 </Pane>
                 <ImageView fitHeight="367.0" fitWidth="249.0" layoutX="74.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/book6.jpg" />
+                        <Image url="@../../view/Books%20Images/book6.jpg" />
                     </image>
                     <effect>
                         <DropShadow height="35.66" radius="28.32" spread="0.33" width="79.62">
@@ -53,27 +53,27 @@
                 <Separator layoutX="397.0" layoutY="351.0" prefHeight="5.0" prefWidth="276.0" />
                 <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="431.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/icons8-star-100.png" />
+                        <Image url="@../../view/Books%20Images/icons8-star-100.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="473.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/icons8-star-100.png" />
+                        <Image url="@../../view/Books%20Images/icons8-star-100.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="517.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/icons8-star-100.png" />
+                        <Image url="@../../view/Books%20Images/icons8-star-100.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="561.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/icons8-star-100.png" />
+                        <Image url="@../../view/Books%20Images/icons8-star-100.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="603.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../View/Books%20Images/icons8-star-100.png" />
+                        <Image url="@../../view/Books%20Images/icons8-star-100.png" />
                     </image>
                 </ImageView>
                 <Text fill="WHITE" layoutX="402.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author  :  GRAHAM DOUGLASS" wrappingWidth="293.13671875">

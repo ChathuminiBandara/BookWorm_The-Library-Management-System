@@ -126,7 +126,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                lk.ijse.bookworm_thelibrarymanagementsystem/lk.ijse.bookworm_thelibrarymanagementsystem.HelloApplication
+                                lk.ijse.bookworm_thelibrarymanagementsystem/lk.ijse.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

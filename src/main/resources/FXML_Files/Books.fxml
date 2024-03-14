@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: FFF1D7FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm_thelibrarymanagementsystem.controller.BooksController">
+<Pane prefHeight="1055.0" prefWidth="1579.0" style="-fx-background-color: FFF1D7FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.my.BooksController">
    <children>
       <Pane layoutX="-3.0" layoutY="1.0" prefHeight="91.0" prefWidth="1583.0">
          <children>
@@ -35,7 +35,7 @@
                <children>
                   <ImageView accessibleRole="BUTTON" fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book8.png" />
+                        <Image url="@../view/Books Images/book8.png" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -62,7 +62,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book2.jpg" />
+                        <Image url="@../view/Books Images/book2.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -89,7 +89,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book3.jpg" />
+                        <Image url="@../view/Books Images/book3.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -116,7 +116,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book4.jpg" />
+                        <Image url="@../view/Books Images/book4.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -143,7 +143,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book6.jpg" />
+                        <Image url="@../view/Books Images/book6.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -170,7 +170,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book10.jpeg" />
+                        <Image url="@../view/Books Images/book10.jpeg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -197,7 +197,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book11.jpg" />
+                        <Image url="@../view/Books Images/book11.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -228,7 +228,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book12.jpg" />
+                        <Image url="@../view/Books Images/book12.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -255,7 +255,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book13.jpeg" />
+                        <Image url="@../view/Books Images/book13.jpeg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -282,7 +282,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book2.jpg" />
+                        <Image url="@../view/Books Images/book2.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -309,7 +309,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book8.png" />
+                        <Image url="@../view/Books Images/book8.png" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -336,7 +336,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book7.jpg" />
+                        <Image url="@../view/Books Images/book7.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -363,7 +363,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book13.jpeg" />
+                        <Image url="@../view/Books Images/book13.jpeg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
@@ -390,7 +390,7 @@
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../View/Books Images/book3.jpg" />
+                        <Image url="@../view/Books Images/book3.jpg" />
                      </image>
                      <effect>
                         <DropShadow spread="0.54">
