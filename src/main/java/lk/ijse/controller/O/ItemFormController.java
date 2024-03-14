@@ -1,19 +1,17 @@
-package lk.ijse.controller;
+package lk.ijse.controller.O;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.dto.ItemDto;
 import lk.ijse.dto.tm.ItemTm;
-import lk.ijse.model.ItemModel;
 
-import java.io.IOException;
+
 import java.sql.SQLException;
 import java.util.List;
 
@@ -22,34 +20,23 @@ public class ItemFormController {
     private TableView<ItemTm> tblItem;
     @FXML
     private TableColumn<?, ?> colAction;
-
     @FXML
     private TableColumn<?, ?> colCode;
-
     @FXML
     private TableColumn<?, ?> colDescription;
-
     @FXML
     private TableColumn<?, ?> colUnitPrice;
-
     @FXML
     private TableColumn<?, ?> colQtyOnHand;
-
-    @FXML
-    private AnchorPane root;
-
+    public AnchorPane root;
     @FXML
     private TextField txtCode;
-
     @FXML
     private TextField txtDescription;
-
     @FXML
     private TextField txtQtyOnHand;
-
     @FXML
     private TextField txtUnitPrice;
-
     private ItemModel itemModel = new ItemModel();
 
     public void initialize() {
@@ -60,7 +47,6 @@ public class ItemFormController {
 
     private void tableListener() {
         tblItem.getSelectionModel().selectedItemProperty().addListener((observable, oldValued, newValue) -> {
-//            System.out.println(newValue);
             setData(newValue);
         });
     }
@@ -82,27 +68,55 @@ public class ItemFormController {
 
     @FXML
     void btnSaveOnAction(ActionEvent event) {
-        String code = txtCode.getText();
-        String description = txtDescription.getText();
-        double unitPrice = Double.parseDouble(txtUnitPrice.getText());
-        int qtyOnHand = Integer.parseInt(txtQtyOnHand.getText());
+        if (validateFields()) {
+            String code = txtCode.getText();
+            String description = txtDescription.getText();
+            double unitPrice = Double.parseDouble(txtUnitPrice.getText());
+            int qtyOnHand = Integer.parseInt(txtQtyOnHand.getText());
 
-        var dto = new ItemDto(code, description, unitPrice, qtyOnHand);
+            var dto = new ItemDto(code, description, unitPrice, qtyOnHand);
 
-//        var model = new ItemModel();
-        try {
-            boolean isSaved = itemModel.saveItem(dto);
-            if (isSaved) {
-                new Alert(Alert.AlertType.CONFIRMATION, "item saved!").show();
-                clearFields();
+            try {
+                boolean isSaved = itemModel.saveItem(dto);
+                if (isSaved) {
+                    new Alert(Alert.AlertType.CONFIRMATION, "Item saved!").show();
+                    clearFields();
+                    loadAllItems(); // Reload the table after saving
+                }
+            } catch (SQLException e) {
+                new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
             }
-        } catch (SQLException e) {
-            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
     }
 
+    private boolean validateFields() {
+        String code = txtCode.getText();
+        String description = txtDescription.getText();
+        String unitPriceText = txtUnitPrice.getText();
+        String qtyOnHandText = txtQtyOnHand.getText();
+
+        if (code.isEmpty() || description.isEmpty() || unitPriceText.isEmpty() || qtyOnHandText.isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Please fill in all fields").show();
+            return false;
+        }
+
+        try {
+            double unitPrice = Double.parseDouble(unitPriceText);
+            int qtyOnHand = Integer.parseInt(qtyOnHandText);
+
+            if (unitPrice < 0 || qtyOnHand < 0) {
+                new Alert(Alert.AlertType.ERROR, "Unit Price and Qty on Hand must be non-negative").show();
+                return false;
+            }
+        } catch (NumberFormatException e) {
+            new Alert(Alert.AlertType.ERROR, "Invalid numeric values").show();
+            return false;
+        }
+
+        return true;
+    }
+
     private void loadAllItems() {
-//        var model = new ItemModel();
         ObservableList<ItemTm> obList = FXCollections.observableArrayList();
         try {
             List<ItemDto> dtoList = itemModel.loadAllItems();
@@ -123,50 +137,57 @@ public class ItemFormController {
         }
     }
 
-    @FXML
-    void btnBackOnAction(ActionEvent event) throws IOException {
-        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/view/dashboard_form.fxml"));
-        Stage stage = (Stage) root.getScene().getWindow();
-
-        stage.setScene(new Scene(anchorPane));
-        stage.setTitle("Dashboard");
-        stage.centerOnScreen();
-    }
-
-    @FXML
+   /* @FXML
     void btnDeleteOnAction(ActionEvent event) {
         String code = txtCode.getText();
-    }
-    @FXML
-    void btnUpdateOnAction(ActionEvent event) {
-        String code = txtCode.getText();
-        String description = txtDescription.getText();
-        double unitPrice = Double.parseDouble(txtUnitPrice.getText());
-        int qtyOnHand = Integer.parseInt(txtQtyOnHand.getText());
-//        var model = new ItemModel();
         try {
-            boolean isUpdated = itemModel.updateItem(new ItemDto(code, description, unitPrice, qtyOnHand));
-            if (isUpdated) {
-                new Alert(Alert.AlertType.CONFIRMATION, "item updated").show();
+            boolean isDeleted = itemModel.deleteItem(code);
+            if (isDeleted) {
+                new Alert(Alert.AlertType.CONFIRMATION, "Item deleted!").show();
+                loadAllItems(); // Reload the table after deleting
+            } else {
+                new Alert(Alert.AlertType.CONFIRMATION, "Item not deleted!").show();
             }
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
+    }*/
+
+    @FXML
+    void btnUpdateOnAction(ActionEvent event) {
+        if (validateFields()) {
+            String code = txtCode.getText();
+            String description = txtDescription.getText();
+            double unitPrice = Double.parseDouble(txtUnitPrice.getText());
+            int qtyOnHand = Integer.parseInt(txtQtyOnHand.getText());
+
+            try {
+                boolean isUpdated = itemModel.updateItem(new ItemDto(code, description, unitPrice, qtyOnHand));
+                if (isUpdated) {
+                    new Alert(Alert.AlertType.CONFIRMATION, "Item updated").show();
+                    clearFields();
+                    loadAllItems(); // Reload the table after updating
+                }
+            } catch (SQLException e) {
+                new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+            }
+        }
     }
+
     @FXML
     void btnClearOnAction(ActionEvent event) {
         clearFields();
     }
+
     @FXML
     void codeSearchOnAction(ActionEvent event) {
         String code = txtCode.getText();
-
         try {
             ItemDto dto = itemModel.searchItem(code);
             if (dto != null) {
                 setFields(dto);
             } else {
-                new Alert(Alert.AlertType.INFORMATION, "item not found!").show();
+                new Alert(Alert.AlertType.INFORMATION, "Item not found!").show();
             }
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
@@ -185,5 +206,12 @@ public class ItemFormController {
         txtDescription.setText(dto.getDescription());
         txtUnitPrice.setText(String.valueOf(dto.getUnitPrice()));
         txtQtyOnHand.setText(String.valueOf(dto.getQtyOnHand()));
+    }
+
+
+
+    public void btnBackOnAction(ActionEvent actionEvent) {
+        Stage stage = (Stage) root.getScene().getWindow();
+        stage.close();
     }
 }
