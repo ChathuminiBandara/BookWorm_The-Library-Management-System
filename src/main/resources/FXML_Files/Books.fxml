@@ -58,7 +58,7 @@
                   <Button layoutY="1.0" mnemonicParsing="false" onAction="#book1_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -85,7 +85,7 @@
                   <Button layoutY="2.0" mnemonicParsing="false" onAction="#book2_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -112,7 +112,7 @@
                   <Button layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#book3_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -139,7 +139,7 @@
                   <Button layoutX="-1.0" layoutY="5.0" mnemonicParsing="false" onAction="#book4_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -166,7 +166,7 @@
                   <Button layoutY="-1.0" mnemonicParsing="false" onAction="#book5_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -224,7 +224,7 @@
       </HBox>
       <HBox layoutX="57.0" layoutY="516.0" prefHeight="347.0" prefWidth="1338.0">
          <children>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -251,7 +251,7 @@
                   <Button layoutX="2.0" layoutY="-2.0" mnemonicParsing="false" onAction="#book8_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -305,7 +305,7 @@
                   <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#book10_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -359,7 +359,7 @@
                   <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#book12_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -386,7 +386,7 @@
                   <Button layoutX="-1.0" mnemonicParsing="false" onAction="#book13_show" prefHeight="347.0" prefWidth="191.0" style="-fx-background-color: transperant;" text="." textFill="TRANSPARENT" />
                </children>
             </Pane>
-            <Pane accessibleRole="BUTTON"  prefHeight="200.0" prefWidth="200.0">
+            <Pane accessibleRole="BUTTON" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <ImageView fitHeight="214.0" fitWidth="221.0" layoutX="17.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -417,9 +417,14 @@
       </HBox>
       <Pane layoutX="1414.0" layoutY="-1.0" prefHeight="1056.0" prefWidth="165.0" style="-fx-background-color: orange;">
          <children>
-            <Button layoutX="50.0" layoutY="37.0" mnemonicParsing="false" onAction="#add_new_book_on_action" prefHeight="59.0" prefWidth="68.0" style="-fx-background-radius: 50; -fx-background-color: pink;" text="+" textFill="WHITE">
+            <Button layoutX="6.0" layoutY="196.0" mnemonicParsing="false" onAction="#over_due_books_on_action" prefHeight="62.0" prefWidth="156.0" text="over due books">
                <font>
-                  <Font size="32.0" />
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="14.0" mnemonicParsing="false" onAction="#add_new_book_on_action" prefHeight="62.0" prefWidth="156.0" text="add new book">
+               <font>
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
          </children></Pane>
