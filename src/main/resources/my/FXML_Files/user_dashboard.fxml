@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1055.0" prefWidth="1930.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.user_dashboard">
+    <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="1055.0" prefWidth="350.0" style="-fx-background-color: #F8853E;">
+        <children>
+            <VBox layoutY="962.0" prefHeight="96.0" prefWidth="350.0" style="-fx-background-color: #F8853E;">
+                <children>
+                    <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" graphicTextGap="15.0" prefHeight="48.0" prefWidth="214.0" style="-fx-background-radius: 100; -fx-background-color: ORANGERED;" text="LogOut" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets left="55.0" top="20.0" />
+                        </VBox.margin>
+                    </JFXButton>
+                </children></VBox>
+            <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="28.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../view/Logo/library logo.png" />
+                </image>
+            </ImageView>
+            <VBox layoutX="8.0" layoutY="155.0" prefHeight="462.0" prefWidth="339.0">
+                <children>
+                    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#DashBoard_On_Action" prefHeight="65.0" prefWidth="316.0" style="-fx-background-radius: 25; -fx-background-color: #FAAF6A;" text="DashBoard" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../view/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                                </image>
+                                <effect>
+                                    <DropShadow>
+                                        <color>
+                                            <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                        </color>
+                                    </DropShadow>
+                                </effect>
+                            </ImageView>
+                        </graphic>
+                    </JFXButton>
+                    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Library_Loan_On_action" prefHeight="78.0" prefWidth="314.0" style="-fx-background-radius: 25; -fx-background-color: #FAAF6A;" text="Library Loan" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../view/Admin Panel Icons/icons8-reload-100.png" />
+                                </image>
+                                <effect>
+                                    <DropShadow>
+                                        <color>
+                                            <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                        </color>
+                                    </DropShadow>
+                                </effect>
+                            </ImageView>
+                        </graphic>
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" top="20.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </JFXButton>
+                    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" minHeight="70.0" onAction="#Books_On_action" prefHeight="70.0" prefWidth="316.0" style="-fx-background-radius: 25; -fx-background-color: #FAAF6A;" text="Books" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../view/Admin Panel Icons/icons8-book-100.png" />
+                                </image>
+                                <effect>
+                                    <DropShadow>
+                                        <color>
+                                            <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                        </color>
+                                    </DropShadow>
+                                </effect>
+                            </ImageView>
+                        </graphic>
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" top="20.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </JFXButton>
+                    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Members_On_action" prefHeight="81.0" prefWidth="316.0" style="-fx-background-radius: 25; -fx-background-color: #FAAF6A;" text="Members" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../view/Admin Panel Icons/icons8-dashboard-100 (1).png" />
+                                </image>
+                                <effect>
+                                    <DropShadow>
+                                        <color>
+                                            <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                        </color>
+                                    </DropShadow>
+                                </effect>
+                            </ImageView>
+                        </graphic>
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" top="20.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </JFXButton>
+                    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" onAction="#Branches_On_action" prefHeight="78.0" prefWidth="319.0" style="-fx-background-radius: 25; -fx-background-color: #FAAF6A;" text="Branches" textFill="#f8f5f5">
+                        <font>
+                            <Font name="Ebrima Bold" size="25.0" />
+                        </font>
+                        <graphic>
+                            <ImageView fitHeight="51.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../view/Admin Panel Icons/icons8-add-100.png" />
+                                </image>
+                                <effect>
+                                    <DropShadow>
+                                        <color>
+                                            <Color red="0.5137255191802979" green="0.5098039507865906" blue="0.5098039507865906" />
+                                        </color>
+                                    </DropShadow>
+                                </effect>
+                            </ImageView>
+                        </graphic>
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" top="20.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </JFXButton>
+                </children>
+            </VBox>
+            <Line endX="143.23779296875" layoutX="105.0" layoutY="62.0" startX="-12.0" stroke="#faaf6a">
+                <effect>
+                    <DropShadow offsetY="10.0" spread="0.4">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </DropShadow>
+                </effect>
+            </Line>
+            <Text fill="WHITE" layoutX="92.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOKWORM">
+                <font>
+                    <Font name="Ebrima Bold" size="29.0" />
+                </font>
+            </Text>
+        </children>
+        <effect>
+            <DropShadow offsetX="6.0" />
+        </effect>
+    </Pane>
+    <AnchorPane fx:id="Dynamic_Anchorpane" layoutX="351.0" layoutY="-8.0" prefHeight="1055.0" prefWidth="1579.0" />
+</AnchorPane>
