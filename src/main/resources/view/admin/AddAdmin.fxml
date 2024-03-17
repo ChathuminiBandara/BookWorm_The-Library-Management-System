@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.ComboBox?>
+<AnchorPane prefHeight="614.0" prefWidth="755.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.AddAdminformController">
+   <children>
+      <AnchorPane layoutX="60.0" layoutY="45.0" prefHeight="523.0" prefWidth="651.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <children>
+            <Label fx:id="mainLabel" layoutX="31.0" layoutY="26.0" text="Add Admin">
+               <font>
+                  <Font name="Cambria Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernamefield" layoutX="37.0" layoutY="142.0" prefHeight="29.0" prefWidth="386.0" promptText="Enter your Username" />
+            <TextField fx:id="passwordfiled" layoutX="37.0" layoutY="219.0" prefHeight="29.0" prefWidth="386.0" promptText="Enter your Password" />
+            <TextField fx:id="emailfield" layoutX="33.0" layoutY="290.0" prefHeight="29.0" prefWidth="386.0" promptText="Enter your Email" />
+            <Label layoutX="37.0" layoutY="126.0" text="User name: ">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="203.0" text="Password:">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="272.0" text="Email : ">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="accounttypecombo" layoutX="37.0" layoutY="365.0" prefHeight="26.0" prefWidth="246.0" />
+            <Label layoutX="35.0" layoutY="346.0" text="Select account type: ">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="429.0" layoutY="439.0" onAction="#oncanselClick" style="-fx-background-color: red;" text="Cansel" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="511.0" layoutY="439.0" onAction="#onSaveClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

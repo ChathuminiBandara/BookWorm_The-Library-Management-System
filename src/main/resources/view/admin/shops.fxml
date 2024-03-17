@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="658.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.ShopsformController">
+   <children>
+      <Label layoutX="79.0" layoutY="24.0" text="Branches">
+         <font>
+            <Font name="Cambria Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="79.0" layoutY="121.0" prefHeight="510.0" prefWidth="991.0" stylesheets="@../../css/table.css">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="namecolumn" prefWidth="115.20002746582031" text="Name" />
+            <TableColumn fx:id="citycolumn" prefWidth="136.0" text="City" />
+            <TableColumn fx:id="addresscolumn" prefWidth="228.80001831054688" text="Address" />
+            <TableColumn fx:id="poscodecolumn" prefWidth="164.7999267578125" text="Postal Code" />
+            <TableColumn fx:id="updatecolumn" prefWidth="136.0" />
+            <TableColumn fx:id="deletecolumn" prefWidth="132.79998779296875" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="969.0" layoutY="72.0" onAction="#onAddBookClick" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: rgba(71, 69, 69, 1); -fx-background-radius: 8;" text="Add Branch" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

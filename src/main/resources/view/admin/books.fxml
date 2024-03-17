@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancpane" prefHeight="658.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.BooksManageformController">
+   <children>
+      <Label layoutX="69.0" layoutY="14.0" text="Books Manage">
+         <font>
+            <Font name="Cambria Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="67.0" layoutY="119.0" prefHeight="508.0" prefWidth="999.0" stylesheets="@../../css/table.css">
+        <columns>
+          <TableColumn fx:id="idcolumn" prefWidth="86.39999389648438" text="Id" />
+          <TableColumn fx:id="titlecolumn" prefWidth="175.19996643066406" text="Title" />
+            <TableColumn fx:id="authorcolumn" prefWidth="196.7999267578125" text="Author" />
+            <TableColumn fx:id="genrecolumn" prefWidth="149.60003662109375" text="Genre" />
+            <TableColumn fx:id="statuscolumn" prefWidth="141.60009765625" text="Status" />
+            <TableColumn fx:id="updatecolumn" prefWidth="124.80010986328125" />
+            <TableColumn fx:id="deletecolumn" prefWidth="121.5999633789063" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="959.0" layoutY="62.0" onAction="#onAddBookClick" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: rgba(71, 69, 69, 1); -fx-background-radius: 8;" text="Add Book" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

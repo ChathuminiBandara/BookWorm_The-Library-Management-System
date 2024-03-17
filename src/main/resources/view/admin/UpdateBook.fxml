@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="796.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.UpdateBookFormController">
+   <children>
+      <AnchorPane layoutX="75.0" layoutY="55.0" prefHeight="474.0" prefWidth="646.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="42.0" layoutY="34.0" text="Update Book">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="authorNamefield" layoutX="350.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter Author name" />
+            <TextField fx:id="bookTitleField" layoutX="42.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter book title" />
+            <JFXComboBox fx:id="selectGenreCombo" layoutX="44.0" layoutY="236.0" prefHeight="26.0" prefWidth="254.0" />
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="486.0" layoutY="412.0" onAction="#onSaveClick" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: rgba(0, 40, 118, 1); -fx-background-radius: 12;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="375.0" layoutY="412.0" onAction="#canselClick" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: rgba(124, 1, 1, 1); -fx-background-radius: 12;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="43.0" layoutY="104.0" text="Book title" textFill="#737070">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="350.0" layoutY="104.0" text="Author" textFill="#737070">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="205.0" prefHeight="31.0" prefWidth="86.0" text="Select genre" textFill="#737070">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
