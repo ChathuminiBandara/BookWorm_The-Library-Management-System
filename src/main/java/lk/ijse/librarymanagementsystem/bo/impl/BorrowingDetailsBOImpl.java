@@ -1,4 +1,4 @@
-package lk.ijse.librarymanagementsystem.service.impl;
+package lk.ijse.librarymanagementsystem.bo.impl;
 
 import lk.ijse.librarymanagementsystem.dao.DAOFactory;
 import lk.ijse.librarymanagementsystem.dao.impl.BorrowingDAOImpl;
@@ -6,15 +6,15 @@ import lk.ijse.librarymanagementsystem.dto.BorrowingDetailDTO;
 import lk.ijse.librarymanagementsystem.entity.Book;
 import lk.ijse.librarymanagementsystem.entity.BorrowingDetails;
 import lk.ijse.librarymanagementsystem.entity.User;
-import lk.ijse.librarymanagementsystem.service.BorrowingDetailsService;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
+import lk.ijse.librarymanagementsystem.bo.BorrowingDetailsBO;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
 
 import java.util.List;
 
-public class BorrowingDetailsServiceImpl implements BorrowingDetailsService {
+public class BorrowingDetailsBOImpl implements BorrowingDetailsBO {
     BorrowingDAOImpl borrowingDAO = (BorrowingDAOImpl) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.BORROWINGDETAIL);
-    BookServiceImpl bookServiceImpl = (BookServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BOOKService);
-    LogginServiceImpl logginServiceImpl = (LogginServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.LOGGINService);
+    BookBOImpl bookServiceImpl = (BookBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BOOKService);
+    LogginBOImpl logginServiceImpl = (LogginBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.LOGGINService);
 
     @Override
     public boolean updateDueTransaction(int id){

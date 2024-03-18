@@ -9,8 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dto.AdminDTO;
 import lk.ijse.librarymanagementsystem.dto.UserDTO;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.LogginServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.LogginBOImpl;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,7 +33,7 @@ public class passwordCHangeController implements Initializable {
     @FXML
     private TextField usernameField;
 
-    LogginServiceImpl logginServiceImpl = (LogginServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.LOGGINService);
+    LogginBOImpl logginServiceImpl = (LogginBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.LOGGINService);
 
     @FXML
     void onSaveClick(ActionEvent event) {

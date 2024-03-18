@@ -1,4 +1,4 @@
-package lk.ijse.librarymanagementsystem.service.impl;
+package lk.ijse.librarymanagementsystem.bo.impl;
 
 import lk.ijse.librarymanagementsystem.dao.DAOFactory;
 import lk.ijse.librarymanagementsystem.dao.impl.AdminDAOImpl;
@@ -7,12 +7,12 @@ import lk.ijse.librarymanagementsystem.dto.AdminDTO;
 import lk.ijse.librarymanagementsystem.dto.UserDTO;
 import lk.ijse.librarymanagementsystem.entity.Admin;
 import lk.ijse.librarymanagementsystem.entity.User;
-import lk.ijse.librarymanagementsystem.service.LogginService;
+import lk.ijse.librarymanagementsystem.bo.LogginBO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LogginServiceImpl implements LogginService {
+public class LogginBOImpl implements LogginBO {
 
     UserDAOImpl userDAO = (UserDAOImpl) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.USER);
     AdminDAOImpl adminDAO = (AdminDAOImpl) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ADMIN);

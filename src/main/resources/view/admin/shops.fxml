@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="pane" prefHeight="658.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.ShopsformController">
+<AnchorPane fx:id="pane" prefHeight="658.0" prefWidth="1134.0" style="-fx-background-color: #c6edc3;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.BranchesformController">
    <children>
+      <ImageView fitHeight="400.0" fitWidth="400.0" layoutY="320.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/3d-casual-life-stack-of-books.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
       <Label layoutX="79.0" layoutY="24.0" text="Branches">
          <font>
             <Font name="Cambria Bold" size="28.0" />
@@ -25,7 +33,7 @@
             <TableColumn fx:id="deletecolumn" prefWidth="132.79998779296875" />
         </columns>
       </TableView>
-      <JFXButton layoutX="969.0" layoutY="72.0" onAction="#onAddBookClick" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: rgba(71, 69, 69, 1); -fx-background-radius: 8;" text="Add Branch" textFill="WHITE">
+      <JFXButton layoutX="969.0" layoutY="72.0" onAction="#onAddBookClick" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: rgba(71, 69, 69, 1); -fx-background-radius: 8;" text="Add Branch" textFill="WHITE">
          <font>
             <Font name="Cambria" size="17.0" />
          </font>

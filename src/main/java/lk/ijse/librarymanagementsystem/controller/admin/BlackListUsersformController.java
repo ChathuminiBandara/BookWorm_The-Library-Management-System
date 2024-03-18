@@ -8,7 +8,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import lk.ijse.librarymanagementsystem.dao.JoinDAOImpl;
-import lk.ijse.librarymanagementsystem.dto.tm.BlackListTM;
+import lk.ijse.librarymanagementsystem.tm.BlackListTM;
 
 import java.net.URL;
 import java.util.*;

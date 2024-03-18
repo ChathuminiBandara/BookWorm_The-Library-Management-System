@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="686.0" prefWidth="887.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.BlackListUsersformController">
+<AnchorPane prefHeight="686.0" prefWidth="887.0" style="-fx-background-color: seagreen;" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.BlackListUsersformController">
    <children>
-      <AnchorPane layoutX="30.0" layoutY="30.0" prefHeight="635.0" prefWidth="832.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+      <AnchorPane layoutX="30.0" layoutY="30.0" prefHeight="635.0" prefWidth="832.0" style="-fx-background-color: #a8edcb; -fx-background-radius: 25;">
          <children>
-            <Label layoutX="32.0" layoutY="26.0" text="Blacklist Users">
+            <Label layoutX="32.0" layoutY="26.0" text="RedList">
                <font>
                   <Font name="Cambria Bold" size="24.0" />
                </font>

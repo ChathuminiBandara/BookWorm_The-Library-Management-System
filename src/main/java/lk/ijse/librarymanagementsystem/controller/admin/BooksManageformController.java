@@ -14,8 +14,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
-import lk.ijse.librarymanagementsystem.dto.tm.BooksTM;
-import lk.ijse.librarymanagementsystem.service.impl.BookServiceImpl;
+import lk.ijse.librarymanagementsystem.tm.BooksTM;
+import lk.ijse.librarymanagementsystem.bo.impl.BookBOImpl;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -50,7 +50,7 @@ public class BooksManageformController implements Initializable {
     @FXML
     private TableColumn<BooksTM, JFXButton> updatecolumn;
 
-    BookServiceImpl bookServiceImpl = new BookServiceImpl();
+    BookBOImpl bookServiceImpl = new BookBOImpl();
 
     @SneakyThrows
     @FXML

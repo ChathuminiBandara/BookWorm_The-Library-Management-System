@@ -11,8 +11,8 @@ import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.layout.GridPane;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.BookServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.BookBOImpl;
 
 import java.io.IOException;
 import java.net.URL;
@@ -25,7 +25,7 @@ public class userMailFormController implements Initializable {
     @FXML
     private GridPane gridpane;
 
-    BookServiceImpl bookServiceImpl = (BookServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BOOKService);
+    BookBOImpl bookServiceImpl = (BookBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BOOKService);
     @FXML
     private JFXComboBox<String> combo;
 

@@ -13,8 +13,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.BookServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.BookBOImpl;
 
 import java.io.IOException;
 import java.net.URL;
@@ -40,7 +40,7 @@ public class UpdateBookFormController implements Initializable {
     @FXML
     private JFXComboBox<String> selectGenreCombo;
 
-    BookServiceImpl bookService = (BookServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BOOKService);
+    BookBOImpl bookService = (BookBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BOOKService);
 
     @FXML
     void canselClick(ActionEvent event) {

@@ -17,8 +17,8 @@ import lk.ijse.librarymanagementsystem.controller.User.transactionManageformCont
 import lk.ijse.librarymanagementsystem.controller.admin.AddAdminformController;
 import lk.ijse.librarymanagementsystem.dto.AdminDTO;
 import lk.ijse.librarymanagementsystem.dto.UserDTO;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.LogginServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.LogginBOImpl;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -41,7 +41,7 @@ public class LoginController implements Initializable {
     PasswordField passwordField1 ;
     TextField textField;
 
-    LogginServiceImpl loggingService = (LogginServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.LOGGINService);
+    LogginBOImpl loggingService = (LogginBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.LOGGINService);
 
     @FXML
     void onEyeMouseEntered(MouseEvent event) {

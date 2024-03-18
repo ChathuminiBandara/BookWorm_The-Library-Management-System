@@ -10,9 +10,6 @@ import javafx.scene.input.MouseEvent;
 import lk.ijse.librarymanagementsystem.dao.UserBookDetail;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
 import lk.ijse.librarymanagementsystem.dto.BorrowingDetailDTO;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.BookServiceImpl;
-import lk.ijse.librarymanagementsystem.service.impl.BorrowingDetailsServiceImpl;
 
 import java.net.URL;
 import java.time.LocalDate;

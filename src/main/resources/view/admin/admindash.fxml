@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="658.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.adminMainformController">
+<AnchorPane prefHeight="658.0" prefWidth="1134.0" style="-fx-background-color: #a8eccb;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.adminMainformController">
    <children>
-      <AnchorPane layoutX="63.0" layoutY="131.0" prefHeight="150.0" prefWidth="262.0" style="-fx-background-color: black; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutY="55.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/casual-life-3d-tall-stack-of-books.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="63.0" layoutY="131.0" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #073b3a; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="29.0" layoutY="25.0" text="Total Books" textFill="#aea9a9">
+            <Label layoutX="25.0" layoutY="25.0" text="Total Books" textFill="#aea9a9">
                <font>
                   <Font name="Cambria Bold" size="22.0" />
                </font>
             </Label>
-            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="176.0" layoutY="52.0">
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="90.0" layoutY="52.0">
                <image>
-                  <Image url="@../../assets/11612973.png" />
+                  <Image url="@../../book/icons8-book-100.png" />
                </image>
             </ImageView>
-            <Label fx:id="totalbooklbl" layoutX="73.0" layoutY="74.0" text="25" textFill="WHITE">
+            <Label fx:id="totalbooklbl" layoutX="10.0" layoutY="74.0" text="2409" textFill="WHITE">
                <font>
                   <Font name="Corbel Bold" size="30.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="807.0" layoutY="130.0" prefHeight="150.0" prefWidth="262.0" style="-fx-background-color: black; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="550.0" layoutY="130.0" prefHeight="150.0" prefWidth="262.0" style="-fx-background-color: #073b3a; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
             <Label layoutX="25.0" layoutY="23.0" text="Total Users" textFill="#aea9a9">
                <font>
@@ -37,36 +45,36 @@
             </Label>
             <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="176.0" layoutY="53.0">
                <image>
-                  <Image url="@../../assets/10077435.png" />
+                  <Image url="@../../book/icons8-group-100.png" />
                </image>
             </ImageView>
-            <Label fx:id="totaluserlbl" layoutX="76.0" layoutY="70.0" text="25" textFill="WHITE">
+            <Label fx:id="totaluserlbl" layoutX="76.0" layoutY="70.0" text="4532" textFill="WHITE">
                <font>
                   <Font name="Corbel Bold" size="30.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="436.0" layoutY="131.0" prefHeight="150.0" prefWidth="262.0" style="-fx-background-color: black; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="250.0" layoutY="131.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #073b3a; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="25.0" layoutY="19.0" text="Total Shops" textFill="#aca4a4">
+            <Label layoutX="25.0" layoutY="19.0" text="Total Branches" textFill="#aca4a4">
                <font>
                   <Font name="Cambria Bold" size="22.0" />
                </font>
             </Label>
             <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="171.0" layoutY="52.0">
                <image>
-                  <Image url="@../../assets/10744644.png" />
+                  <Image url="@../../book/icons8-dashboard-100%20(1).png" />
                </image>
             </ImageView>
-            <Label fx:id="totalshoplbl" layoutX="71.0" layoutY="72.0" text="25" textFill="WHITE">
+            <Label fx:id="totalshoplbl" layoutX="71.0" layoutY="72.0" text="34" textFill="WHITE">
                <font>
                   <Font name="Corbel Bold" size="30.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="63.0" layoutY="368.0" prefHeight="200.0" prefWidth="721.0" style="-fx-background-color: black; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="63.0" layoutY="368.0" prefHeight="200.0" prefWidth="721.0" style="-fx-background-color: #073b3a; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
             <AnchorPane layoutX="33.0" layoutY="42.0" prefHeight="138.0" prefWidth="666.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
             <Label layoutX="34.0" layoutY="9.0" text="Recent Books" textFill="#aea9a9">
@@ -76,16 +84,16 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="911.0" layoutY="364.0" prefHeight="200.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="860.0" layoutY="125.0" prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #073b3a; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="20.0" layoutY="22.0" text="Add Admin" textFill="#aea9a9">
+            <Label layoutX="45.0" layoutY="22.0" text="New Admin" textFill="#aea9a9">
                <font>
                   <Font name="Cambria Bold" size="22.0" />
                </font>
             </Label>
-            <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="35.0" layoutY="74.0" onMouseClicked="#onAddAdminClick">
+            <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="55.0" layoutY="74.0" onMouseClicked="#onAddAdminClick">
                <image>
-                  <Image url="@../../assets/1803276.png" />
+                  <Image url="@../../book/icons8-add-male-user-group-100.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -98,5 +106,13 @@
             <Font name="Cambria Bold" size="28.0" />
          </font>
       </Label>
+      <ImageView fitHeight="350.0" fitWidth="300.0" layoutX="860.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/business-3d-young-woman-in-casual-clothing-reading-book.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
    </children>
 </AnchorPane>

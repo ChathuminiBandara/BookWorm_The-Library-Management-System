@@ -1,4 +1,4 @@
-package lk.ijse.librarymanagementsystem.dto.tm;
+package lk.ijse.librarymanagementsystem.tm;
 
 import com.jfoenix.controls.JFXButton;
 import lombok.AllArgsConstructor;

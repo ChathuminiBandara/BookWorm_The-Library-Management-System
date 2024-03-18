@@ -1,13 +1,11 @@
-package lk.ijse.librarymanagementsystem.service;
+package lk.ijse.librarymanagementsystem.bo;
 
 import lk.ijse.librarymanagementsystem.dto.BorrowingDetailDTO;
-import lk.ijse.librarymanagementsystem.entity.Book;
 import lk.ijse.librarymanagementsystem.entity.BorrowingDetails;
-import lk.ijse.librarymanagementsystem.entity.User;
 
 import java.util.List;
 
-public interface BorrowingDetailsService extends AllService {
+public interface BorrowingDetailsBO extends superBo {
      boolean updateDueTransaction(int id);
      List<BorrowingDetails> getDetails(int id);
      boolean saveBorrowingDetails(BorrowingDetailDTO borrowingDetailDTO);

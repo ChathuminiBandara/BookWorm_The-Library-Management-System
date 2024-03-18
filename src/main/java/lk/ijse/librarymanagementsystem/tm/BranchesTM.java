@@ -1,20 +1,19 @@
-package lk.ijse.librarymanagementsystem.dto.tm;
+package lk.ijse.librarymanagementsystem.tm;
 
 import com.jfoenix.controls.JFXButton;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class BooksTM {
+@NoArgsConstructor
+public class BranchesTM {
     private String id;
-    private String title;
-    private String author;
-    private String genre;
-    private String status;
-    private String url;
+    private String name;
+    private String city;
+    private String address;
+    private String postalCode;
     private JFXButton update;
     private JFXButton delete;
 }

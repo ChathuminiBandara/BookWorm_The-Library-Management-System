@@ -17,7 +17,7 @@ public class DAOFactory {
             case ADMIN: return new AdminDAOImpl();
             case USER: return new UserDAOImpl();
             case BOOK: return new BookDAOImpl();
-            case SHOP: return new ShopDAOImpl();
+            case SHOP: return new BranchDAOImpl();
             case BORROWINGDETAIL: return new BorrowingDAOImpl();
             default: return null;
         }

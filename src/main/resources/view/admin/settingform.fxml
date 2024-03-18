@@ -1,92 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane fx:id="pane" prefHeight="658.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.SettingformController">
+<AnchorPane fx:id="pane" prefHeight="658.0" prefWidth="1134.0" style="-fx-background-color: #a8edcb;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.SettingformController">
    <children>
-      <Label layoutX="89.0" layoutY="34.0" text="Settings">
+      <ImageView fitHeight="650.0" fitWidth="300.0" layoutX="820.0" layoutY="250.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/business-3d-young-woman-in-casual-clothing-reading-book.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="650.0" fitWidth="650.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/casual-life-3d-tall-stack-of-books.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="89.0" layoutY="34.0" text="Settings" textFill="WHITE">
          <font>
             <Font name="Cambria Bold" size="28.0" />
          </font>
+         <effect>
+            <DropShadow spread="1.0" />
+         </effect>
       </Label>
-      <AnchorPane layoutX="89.0" layoutY="157.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: rgba(220, 242, 255, 1);" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="89.0" layoutY="157.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: #073b3a;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="45.0" layoutY="20.0" text="Add New Admin">
+            <Label layoutX="45.0" layoutY="20.0" text="Add New Admin" textFill="WHITE">
                <font>
                   <Font name="Corbel" size="25.0" />
                </font>
             </Label>
             <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="343.0" layoutY="24.0">
                <image>
-                  <Image url="@../../assets/1803276.png" />
+                  <Image url="@../../book/icons8-add-male-user-group-100.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="73.0" onAction="#adminAddbtnClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="Add" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="73.0" onAction="#adminAddbtnClick" style="-fx-background-color: seagreen;" text="Add" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
          </children>
+         <effect>
+            <DropShadow spread="0.36" />
+         </effect>
       </AnchorPane>
-      <AnchorPane layoutX="596.0" layoutY="157.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: rgba(220, 242, 255, 1);" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="596.0" layoutY="157.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: #073b3a;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="45.0" layoutY="20.0" text="Add New User">
+            <Label layoutX="45.0" layoutY="20.0" text="Add New User" textFill="WHITE">
                <font>
                   <Font name="Corbel" size="25.0" />
                </font>
             </Label>
             <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="341.0" layoutY="22.0">
                <image>
-                  <Image url="@../../assets/10077435.png" />
+                  <Image url="@../../book/icons8-group-100.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="71.0" onAction="#userAddbtnClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="Add" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="71.0" onAction="#userAddbtnClick" style="-fx-background-color: seagreen;" text="Add" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="89.0" layoutY="383.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: rgba(220, 242, 255, 1);" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="89.0" layoutY="383.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: #073b3a;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="40.0" layoutY="21.0" text="Change account password">
+            <Label layoutX="40.0" layoutY="21.0" text="Change account password" textFill="WHITE">
                <font>
                   <Font name="Corbel" size="25.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="71.0" onAction="#changeAccpasswordbtnClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="Change" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="71.0" onAction="#changeAccpasswordbtnClick" style="-fx-background-color: seagreen;" text="Change" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
             <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="345.0" layoutY="22.0">
                <image>
-                  <Image url="@../../assets/11612973.png" />
+                  <Image url="@../../book/icons8-reload-100.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="596.0" layoutY="383.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: rgba(220, 242, 255, 1);" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
+      <AnchorPane layoutX="596.0" layoutY="383.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-color: #073b3a;" styleClass="shadow" stylesheets="@../../css/buttonborder.css">
          <children>
-            <Label layoutX="40.0" layoutY="21.0" text="View User blacklist">
+            <Label layoutX="40.0" layoutY="21.0" text="View Redlist" textFill="WHITE">
                <font>
                   <Font name="Corbel" size="25.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="73.0" onAction="#userBlackListbtnClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="View" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="73.0" onAction="#userBlackListbtnClick" style="-fx-background-color: seagreen;" text="View" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
             <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="347.0" layoutY="22.0">
                <image>
-                  <Image url="@../../assets/14808723.png" />
+                  <Image url="@../../book/icons8-exclamation-mark-100.png" />
                </image>
             </ImageView>
          </children>

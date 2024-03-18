@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="584.0" prefWidth="796.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.addBookformController">
+<AnchorPane prefHeight="584.0" prefWidth="854.0" style="-fx-background-color: #073b3a;" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.addBookformController">
    <children>
-      <AnchorPane layoutX="75.0" layoutY="55.0" prefHeight="474.0" prefWidth="646.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="-60.6">
+         <image>
+            <Image url="@../../book/casual-life-3d-open-orange-book-floating%20(1).png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/3d-casual-life-girl-with-books.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="160.0" layoutY="55.0" prefHeight="474.0" prefWidth="646.0" style="-fx-background-color: #d8f3dc; -fx-background-radius: 25;">
          <children>
             <Label layoutX="42.0" layoutY="34.0" text="Add Book">
                <font>
@@ -23,13 +33,16 @@
             <TextField fx:id="authorNamefield" layoutX="350.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter Author name" />
             <TextField fx:id="bookTitleField" layoutX="42.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter book title" />
             <JFXComboBox fx:id="selectGenreCombo" layoutX="350.0" layoutY="224.0" prefHeight="26.0" prefWidth="254.0" />
-            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="168.0" layoutX="65.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
-            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="486.0" layoutY="412.0" onAction="#onSaveClick" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: rgba(0, 40, 118, 1); -fx-background-radius: 12;" text="Save" textFill="WHITE">
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="168.0" layoutX="65.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="486.0" layoutY="412.0" onAction="#onSaveClick" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 12;" text="Save" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="375.0" layoutY="412.0" onAction="#canselClick" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: rgba(124, 1, 1, 1); -fx-background-radius: 12;" text="Cansel" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="375.0" layoutY="412.0" onAction="#canselClick" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: seagreen; -fx-background-radius: 12;" text="Cancel" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
@@ -58,6 +71,9 @@
                </font>
             </Label>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </AnchorPane>
    </children>
 </AnchorPane>

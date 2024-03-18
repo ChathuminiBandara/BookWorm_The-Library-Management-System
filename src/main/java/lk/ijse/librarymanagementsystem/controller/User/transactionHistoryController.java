@@ -8,10 +8,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import lk.ijse.librarymanagementsystem.dto.tm.TransactionTM;
+import lk.ijse.librarymanagementsystem.tm.TransactionTM;
 import lk.ijse.librarymanagementsystem.entity.BorrowingDetails;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.BorrowingDetailsServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.BorrowingDetailsBOImpl;
 
 import java.net.URL;
 import java.util.List;
@@ -37,7 +37,7 @@ public class transactionHistoryController implements Initializable {
     @FXML
     private TableColumn<TransactionTM, String> titlecolumn;
     public static int id;
-    BorrowingDetailsServiceImpl borrowingDetailsServiceImpl = (BorrowingDetailsServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BORROWINGDETAILService);
+    BorrowingDetailsBOImpl borrowingDetailsServiceImpl = (BorrowingDetailsBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BORROWINGDETAILService);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

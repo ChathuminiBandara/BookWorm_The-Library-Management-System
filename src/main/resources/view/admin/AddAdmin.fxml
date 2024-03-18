@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<?import javafx.scene.control.ComboBox?>
-<AnchorPane prefHeight="614.0" prefWidth="755.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.AddAdminformController">
+<AnchorPane prefHeight="614.0" prefWidth="755.0" style="-fx-background-color: #073b3a;" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.AddAdminformController">
    <children>
-      <AnchorPane layoutX="60.0" layoutY="45.0" prefHeight="523.0" prefWidth="651.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+      <AnchorPane layoutX="60.0" layoutY="45.0" prefHeight="523.0" prefWidth="651.0" style="-fx-background-color: #b7e4c7; -fx-background-radius: 25;">
          <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="450.0" layoutY="200.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../book/business-3d-young-woman-in-glasses-sitting-and-reading-book.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
             <Label fx:id="mainLabel" layoutX="31.0" layoutY="26.0" text="Add Admin">
                <font>
                   <Font name="Cambria Bold" size="28.0" />
@@ -42,17 +48,20 @@
                   <Font name="Cambria Bold" size="12.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="429.0" layoutY="439.0" onAction="#oncanselClick" style="-fx-background-color: red;" text="Cansel" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="429.0" layoutY="439.0" onAction="#oncanselClick" style="-fx-background-color: seagreen;" text="Cancel" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="511.0" layoutY="439.0" onAction="#onSaveClick" style="-fx-background-color: rgba(0, 40, 118, 1);" text="Save" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="511.0" layoutY="439.0" onAction="#onSaveClick" style="-fx-background-color: dodgerblue;" text="Save" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </AnchorPane>
    </children>
 </AnchorPane>

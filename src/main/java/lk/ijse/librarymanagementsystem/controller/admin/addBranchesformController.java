@@ -8,13 +8,11 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import lk.ijse.librarymanagementsystem.dto.ShopDTO;
-import lk.ijse.librarymanagementsystem.service.impl.ShopServiceImpl;
+import lk.ijse.librarymanagementsystem.dto.BranchDTO;
+import lk.ijse.librarymanagementsystem.bo.impl.BranchBOImpl;
 import lombok.SneakyThrows;
 
-import java.util.regex.Pattern;
-
-public class addShopformController {
+public class addBranchesformController {
 
     @FXML
     private TextField addressfield;
@@ -32,7 +30,7 @@ public class addShopformController {
     private TextField shopnameField;
     public static AnchorPane anchorPane;
 
-    ShopServiceImpl service = new ShopServiceImpl();
+    BranchBOImpl service = new BranchBOImpl();
 
     @FXML
     void canselClick(ActionEvent event) {
@@ -43,7 +41,7 @@ public class addShopformController {
     @SneakyThrows
     @FXML
     void onSaveClick(ActionEvent event) {
-        if (service.saveShop(new ShopDTO(0, shopnameField.getText(), cityfield.getText(), addressfield.getText(), postalcodefield.getText()))) {
+        if (service.saveShop(new BranchDTO(0, shopnameField.getText(), cityfield.getText(), addressfield.getText(), postalcodefield.getText()))) {
             anchorPane.getChildren().clear();
             anchorPane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/admin/shops.fxml")));
             canselClick(event);

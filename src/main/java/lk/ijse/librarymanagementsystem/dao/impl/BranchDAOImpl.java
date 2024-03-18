@@ -2,7 +2,7 @@ package lk.ijse.librarymanagementsystem.dao.impl;
 
 import javafx.scene.control.Alert;
 import lk.ijse.librarymanagementsystem.config.FactoryConfiguration;
-import lk.ijse.librarymanagementsystem.dao.ShopDAO;
+import lk.ijse.librarymanagementsystem.dao.BranchDAO;
 import lk.ijse.librarymanagementsystem.entity.Branches;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,7 +10,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class ShopDAOImpl implements ShopDAO {
+public class BranchDAOImpl implements BranchDAO {
 
     @Override
     public boolean deleteShop(int id){

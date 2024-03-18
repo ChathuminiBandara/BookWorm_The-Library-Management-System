@@ -13,54 +13,53 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import lk.ijse.librarymanagementsystem.dto.ShopDTO;
-import lk.ijse.librarymanagementsystem.dto.tm.ShopsTM;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.ShopServiceImpl;
+import lk.ijse.librarymanagementsystem.dto.BranchDTO;
+import lk.ijse.librarymanagementsystem.tm.BranchesTM;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.BranchBOImpl;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
 import java.net.URL;
-import java.security.Provider;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ShopsformController implements Initializable {
+public class BranchesformController implements Initializable {
 
     @FXML
-    private TableColumn<ShopsTM, String> addresscolumn;
+    private TableColumn<BranchesTM, String> addresscolumn;
 
     @FXML
-    private TableColumn<ShopsTM, String> citycolumn;
+    private TableColumn<BranchesTM, String> citycolumn;
 
     @FXML
-    private TableColumn<ShopsTM, JFXButton> deletecolumn;
+    private TableColumn<BranchesTM, JFXButton> deletecolumn;
 
     @FXML
-    private TableColumn<ShopsTM, String> idcolumn;
+    private TableColumn<BranchesTM, String> idcolumn;
 
     @FXML
-    private TableColumn<ShopsTM, String> namecolumn;
+    private TableColumn<BranchesTM, String> namecolumn;
 
     @FXML
-    private TableColumn<ShopsTM, String> poscodecolumn;
+    private TableColumn<BranchesTM, String> poscodecolumn;
 
     @FXML
-    private TableView<ShopsTM> table;
+    private TableView<BranchesTM> table;
 
     @FXML
-    private TableColumn<ShopsTM, JFXButton> updatecolumn;
+    private TableColumn<BranchesTM, JFXButton> updatecolumn;
 
     @FXML
     private AnchorPane pane;
 
-    ShopServiceImpl service = (ShopServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.SHOPService);
+    BranchBOImpl service = (BranchBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.SHOPService);
 
     @SneakyThrows
     @FXML
     void onAddBookClick(ActionEvent event) {
         Stage stage = new Stage();
-        addShopformController.anchorPane = pane;
+        addBranchesformController.anchorPane = pane;
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin/addshop.fxml"))));
         stage.setResizable(false);
         stage.show();
@@ -74,10 +73,10 @@ public class ShopsformController implements Initializable {
     }
 
     private void loadValues() {
-        ArrayList<ShopDTO> allShops = service.getAllShops();
-        ObservableList<ShopsTM> observableList = FXCollections.observableArrayList();
-        for (ShopDTO s : allShops){
-            observableList.add(new ShopsTM(String.valueOf(s.getId()),s.getName(),s.getCity(),s.getAddress(),s.getPostalCode(),new JFXButton("Update"),new JFXButton("Delete")));
+        ArrayList<BranchDTO> allShops = service.getAllShops();
+        ObservableList<BranchesTM> observableList = FXCollections.observableArrayList();
+        for (BranchDTO s : allShops){
+            observableList.add(new BranchesTM(String.valueOf(s.getId()),s.getName(),s.getCity(),s.getAddress(),s.getPostalCode(),new JFXButton("Update"),new JFXButton("Delete")));
         }
         table.setItems(observableList);
         for (int i = 0; i < observableList.size(); i++) {
@@ -97,12 +96,12 @@ public class ShopsformController implements Initializable {
     }
 
     private void setColumns() {
-        idcolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,String>("id"));
-        namecolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,String>("name"));
-        citycolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,String>("city"));
-        addresscolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,String>("address"));
-        poscodecolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,String>("postalCode"));
-        updatecolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,JFXButton>("update"));
-        deletecolumn.setCellValueFactory(new PropertyValueFactory<ShopsTM,JFXButton>("delete"));
+        idcolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,String>("id"));
+        namecolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,String>("name"));
+        citycolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,String>("city"));
+        addresscolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,String>("address"));
+        poscodecolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,String>("postalCode"));
+        updatecolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,JFXButton>("update"));
+        deletecolumn.setCellValueFactory(new PropertyValueFactory<BranchesTM,JFXButton>("delete"));
     }
 }

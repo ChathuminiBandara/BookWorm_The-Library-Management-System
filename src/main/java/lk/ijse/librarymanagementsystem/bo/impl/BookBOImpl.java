@@ -1,16 +1,15 @@
-package lk.ijse.librarymanagementsystem.service.impl;
+package lk.ijse.librarymanagementsystem.bo.impl;
 
 import lk.ijse.librarymanagementsystem.dao.DAOFactory;
 import lk.ijse.librarymanagementsystem.dao.impl.BookDAOImpl;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
 import lk.ijse.librarymanagementsystem.entity.Book;
-import lk.ijse.librarymanagementsystem.service.BookService;
+import lk.ijse.librarymanagementsystem.bo.BookBO;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class BookServiceImpl implements BookService {
+public class BookBOImpl implements BookBO {
 
     BookDAOImpl bookDAO = (BookDAOImpl) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.BOOK);
 

@@ -7,11 +7,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import lk.ijse.librarymanagementsystem.dao.BookDAO;
-import lk.ijse.librarymanagementsystem.service.BookService;
-import lk.ijse.librarymanagementsystem.service.LogginService;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.ShopService;
+import lk.ijse.librarymanagementsystem.bo.BookBO;
+import lk.ijse.librarymanagementsystem.bo.LogginBO;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.BranchBO;
 import lombok.SneakyThrows;
 
 import java.net.URL;
@@ -27,11 +26,11 @@ public class adminMainformController implements Initializable {
 
     @FXML
     private Label totaluserlbl;
-    BookService bookService = (BookService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BOOKService);
+    BookBO bookBO = (BookBO) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BOOKService);
 
-    LogginService logginService = (LogginService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.LOGGINService);
+    LogginBO logginBO = (LogginBO) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.LOGGINService);
 
-    ShopService service = (ShopService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.SHOPService);
+    BranchBO service = (BranchBO) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.SHOPService);
     @SneakyThrows
     @FXML
     void onAddAdminClick(MouseEvent event) {
@@ -43,8 +42,8 @@ public class adminMainformController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        totalbooklbl.setText(String.valueOf(bookService.getBookCount()));
-        totaluserlbl.setText(String.valueOf(logginService.getUserCount()));
+        totalbooklbl.setText(String.valueOf(bookBO.getBookCount()));
+        totaluserlbl.setText(String.valueOf(logginBO.getUserCount()));
         totalshoplbl.setText(String.valueOf(service.getShopCount()));
     }
 }

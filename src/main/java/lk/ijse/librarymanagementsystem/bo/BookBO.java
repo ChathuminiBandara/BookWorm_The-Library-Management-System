@@ -1,12 +1,11 @@
-package lk.ijse.librarymanagementsystem.service;
+package lk.ijse.librarymanagementsystem.bo;
 
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
 import lk.ijse.librarymanagementsystem.entity.Book;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public interface BookService extends AllService{
+public interface BookBO extends superBo {
      Book getBookUsingID(int id);
      boolean updateBookStatus(int id ,String status);
 

@@ -1,6 +1,5 @@
 package lk.ijse.librarymanagementsystem.controller.admin;
 
-import com.jfoenix.controls.JFXComboBox;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,7 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dto.AdminDTO;
 import lk.ijse.librarymanagementsystem.dto.UserDTO;
-import lk.ijse.librarymanagementsystem.service.impl.LogginServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.impl.LogginBOImpl;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,7 +37,7 @@ public class AddAdminformController implements Initializable {
     private Label mainLabel;
 
 
-    LogginServiceImpl logginServiceImpl = new LogginServiceImpl();
+    LogginBOImpl logginServiceImpl = new LogginBOImpl();
 
     @FXML
     void onSaveClick(ActionEvent event) {

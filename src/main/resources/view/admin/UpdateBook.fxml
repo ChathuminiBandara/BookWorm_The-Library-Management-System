@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="584.0" prefWidth="796.0" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.UpdateBookFormController">
+<AnchorPane prefHeight="584.0" prefWidth="927.0" style="-fx-background-color: #073b3a;" stylesheets="@../../css/gradiant.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.admin.UpdateBookFormController">
    <children>
-      <AnchorPane layoutX="75.0" layoutY="55.0" prefHeight="474.0" prefWidth="646.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="10.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../book/casual-life-3d-cat-lying-on-books.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="200.0" layoutY="55.0" prefHeight="474.0" prefWidth="646.0" style="-fx-background-color: #e4fde1; -fx-background-radius: 25;">
          <children>
             <Label layoutX="42.0" layoutY="34.0" text="Update Book">
                <font>
@@ -19,12 +27,12 @@
             <TextField fx:id="authorNamefield" layoutX="350.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter Author name" />
             <TextField fx:id="bookTitleField" layoutX="42.0" layoutY="128.0" prefHeight="30.0" prefWidth="254.0" promptText="Enter book title" />
             <JFXComboBox fx:id="selectGenreCombo" layoutX="44.0" layoutY="236.0" prefHeight="26.0" prefWidth="254.0" />
-            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="486.0" layoutY="412.0" onAction="#onSaveClick" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: rgba(0, 40, 118, 1); -fx-background-radius: 12;" text="Save" textFill="WHITE">
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="486.0" layoutY="412.0" onAction="#onSaveClick" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: dodgerblue; -fx-background-radius: 12;" text="Save" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="375.0" layoutY="412.0" onAction="#canselClick" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: rgba(124, 1, 1, 1); -fx-background-radius: 12;" text="Cancel" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="375.0" layoutY="412.0" onAction="#canselClick" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: seagreen; -fx-background-radius: 12;" text="Cancel" textFill="WHITE">
                <font>
                   <Font name="Cambria Bold" size="15.0" />
                </font>
@@ -45,6 +53,9 @@
                </font>
             </Label>
          </children>
+         <effect>
+            <DropShadow />
+         </effect>
       </AnchorPane>
    </children>
 </AnchorPane>

@@ -11,6 +11,7 @@ public class AppInitializer extends Application {
     public static void main(String[] args) {
         Session session = FactoryConfiguration.getFactoryConfiguration().getSession();
         launch(args);
+
     }
     @Override
     public void start(Stage stage) throws Exception {

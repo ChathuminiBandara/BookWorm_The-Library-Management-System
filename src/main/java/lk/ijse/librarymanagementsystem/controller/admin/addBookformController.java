@@ -17,7 +17,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dto.BookDTO;
-import lk.ijse.librarymanagementsystem.service.impl.BookServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.impl.BookBOImpl;
 import lombok.SneakyThrows;
 
 import java.io.File;
@@ -43,7 +43,7 @@ public class addBookformController implements Initializable {
     private JFXComboBox<String> selectGenreCombo;
     String imagePath = null;
 
-    BookServiceImpl bookServiceImpl = new BookServiceImpl();
+    BookBOImpl bookServiceImpl = new BookBOImpl();
 
     @FXML
     void canselClick(ActionEvent event) {

@@ -15,11 +15,11 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.librarymanagementsystem.dao.UserBookDetail;
-import lk.ijse.librarymanagementsystem.dto.tm.TransactionTM;
+import lk.ijse.librarymanagementsystem.tm.TransactionTM;
 import lk.ijse.librarymanagementsystem.entity.BorrowingDetails;
-import lk.ijse.librarymanagementsystem.service.BookService;
-import lk.ijse.librarymanagementsystem.service.ServiceFactory;
-import lk.ijse.librarymanagementsystem.service.impl.BorrowingDetailsServiceImpl;
+import lk.ijse.librarymanagementsystem.bo.BookBO;
+import lk.ijse.librarymanagementsystem.bo.ServiceBO;
+import lk.ijse.librarymanagementsystem.bo.impl.BorrowingDetailsBOImpl;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -54,10 +54,10 @@ public class transactionManageformController implements Initializable {
     private TableView<TransactionTM> table;
     @FXML
     private TableColumn<TransactionTM, JFXButton> returncolumn;
-    BorrowingDetailsServiceImpl borrowingDetailsServiceImpl = (BorrowingDetailsServiceImpl) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BORROWINGDETAILService);
+    BorrowingDetailsBOImpl borrowingDetailsServiceImpl = (BorrowingDetailsBOImpl) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BORROWINGDETAILService);
 
     UserBookDetail userBookDetail = new UserBookDetail();
-    BookService bookService = (BookService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.BOOKService);
+    BookBO bookBO = (BookBO) ServiceBO.getServiceFactory().getService(ServiceBO.ServiceTypes.BOOKService);
     @SneakyThrows
     @FXML
     void transHistoryButton(ActionEvent event) {
